@@ -1,0 +1,13 @@
+@import '../../shared/theme.scss';
+
+.search {
+    font-size: 14px;
+
+    &__field {
+        width: 100%;
+        
+        &-label {
+            color: mat-color($primary);
+        }
+    }
+}

@@ -1,0 +1,168 @@
+{
+    "success": true,
+    "response": {
+        "category": "mouses",
+        "brands": [
+            { 
+                "title": "A4Tech",
+                "items": [
+                    { 
+                        "name": "Мышка A4Tech Bloody V5M Black",
+                        "code": 42317,
+                        "price": 599,
+                        "rating": 3.1,
+                        "image": "/assets/data/images/mouses/a4Tech/a4tech-v5m-bloody-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка A4Tech Bloody V9M Black",
+                        "code": 44218,
+                        "price": 542,
+                        "rating": 4.7,
+                        "image": "/assets/data/images/mouses/a4Tech/a4tech-bloody-v9m-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка A4Tech Bloody Q81 Circuit USB Black",
+                        "code": 54518,
+                        "price": 499,
+                        "rating": 3.8,
+                        "image": "/assets/data/images/mouses/a4Tech/a4tech-q81-circuit-bloody-usb-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка A4Tech XL-747H USB Brown",
+                        "code": 54519,
+                        "price": 599,
+                        "rating": 2.0,
+                        "image": "/assets/data/images/mouses/a4Tech/a4tech-xl-747h-usb-brown.jpg"
+                    },
+                    { 
+                        "name": "Мышка A4Tech Bloody P85 Sport USB Black",
+                        "code": 64539,
+                        "price": 750,
+                        "rating": 3.4,
+                        "image": "/assets/data/images/mouses/a4Tech/a4tech-p85-sport.jpg"
+                    }
+                ]
+            },
+            { 
+                "title": "Logitech",
+                "items": [
+                    { 
+                        "name": "Мышка Logitech G Pro Gaming Wireless Black",
+                        "code": 56217,
+                        "price": 3700,
+                        "rating": 4.7,
+                        "image": "/assets/data/images/mouses/logitech/logitech-g-pro-gaming-wireless-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка Logitech G305 Lightspeed Wireless Black",
+                        "code": 56717,
+                        "price": 1599,
+                        "rating": 4.9,
+                        "image": "/assets/data/images/mouses/logitech/logitech-g305-lightspeed-wireless-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка Logitech G502 Hero Black",
+                        "code": 56745,
+                        "price": 2499,
+                        "rating": 3.0,
+                        "image": "/assets/data/images/mouses/logitech/logitech-g502-hero-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка Logitech G403 Prodigy Black",
+                        "code": 56845,
+                        "price": 1999,
+                        "rating": 4.1,
+                        "image": "/assets/data/images/mouses/logitech/logitech-g403-prodigy-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка Logitech Wireless Mouse M171 Black",
+                        "code": 59945,
+                        "price": 379,
+                        "rating": 3.9,
+                        "image": "/assets/data/images/mouses/logitech/logitech-wireless-mouse-m171-black.jpg"
+                    }
+                ]
+            },
+            { 
+                "title": "Razer",
+                "items": [
+                    { 
+                        "name": "Мышка Razer Deathadder Essential Black",
+                        "code": 80217,
+                        "price": 899,
+                        "rating": 5.0,
+                        "image": "/assets/data/images/mouses/razer/razer-deathadder-essential-black.png"
+                    },
+                    { 
+                        "name": "Мышка Razer Death Adder Elite",
+                        "code": 80807,
+                        "price": 1400,
+                        "rating": 4.0,
+                        "image": "/assets/data/images/mouses/razer/razer-death-adder-elite.jpg"
+                    },
+                    { 
+                        "name": "Мышка Razer Naga Trinity Expert MMO",
+                        "code": 89007,
+                        "price": 2699,
+                        "rating": 4.7,
+                        "image": "/assets/data/images/mouses/razer/razer-naga-trinity-expert-mmo-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка Razer Mamba Elite",
+                        "code": 80007,
+                        "price": 2499,
+                        "rating": 3.8,
+                        "image": "/assets/data/images/mouses/razer/razer-mamba-elite-rz01-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка Razer Atheris",
+                        "code": 80070,
+                        "price": 1599,
+                        "rating": 4.9,
+                        "image": "/assets/data/images/mouses/razer/rezer-atheris-rz01-black.jpg"
+                    }
+                ]
+            },
+            { 
+                "title": "SteelSeries",
+                "items": [
+                    { 
+                        "name": "Мышка SteelSeries Rival 110",
+                        "code": 86070,
+                        "price": 999,
+                        "rating": 4.0,
+                        "image": "/assets/data/images/mouses/steel-series/steelseries-rival-110-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка SteelSeries Rival 650 RGB",
+                        "code": 86340,
+                        "price": 2500,
+                        "rating": 4.5,
+                        "image": "/assets/data/images/mouses/steel-series/stellseries-rival-650-rgb-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка SteelSeries Rival 105",
+                        "code": 12340,
+                        "price": 799,
+                        "rating": 4.9,
+                        "image": "/assets/data/images/mouses/steel-series/rapoo-rival-105-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка SteelSeries Rival 500",
+                        "code": 55340,
+                        "price": 1999,
+                        "rating": 3.8,
+                        "image": "/assets/data/images/mouses/steel-series/steelseries-rival-500-black.jpg"
+                    },
+                    { 
+                        "name": "Мышка SteelSeries Rival 310 CS:GO Howl Edition",
+                        "code": 55388,
+                        "price": 1799,
+                        "rating": 4.8,
+                        "image": "/assets/data/images/mouses/steel-series/stellseries-rival-310-csgo-howl-edition-blackred.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+<div class="search">
+    <mat-form-field class="search__field">
+        <mat-label class="search__field-label">Поиск</mat-label>
+        <input type="search" matInput [formControl]="search">
+    </mat-form-field>
+    <div class="">
+        <!-- <img *ngFor="let name of products.brands[3].items"  [src]="name.image" alt=""> -->
+        <mat-list *ngIf="filtered_options.length > 0">
+            <mat-list-item *ngFor="let name of filtered_options"> list {{name}} </mat-list-item>
+            <!-- <mat-list-item> Salt </mat-list-item>
+            <mat-list-item> Paprika </mat-list-item> -->
+        </mat-list>
+    </div>
+    <!-- <mat-autocomplete #auto="matAutocomplete">
+        <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+            <mat-option *ngFor="let name of group.names" [value]="name">
+              {{name}}
+            </mat-option>
+        </mat-optgroup>
+    </mat-autocomplete> -->
+</div>

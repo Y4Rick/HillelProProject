@@ -33,6 +33,9 @@
 
     &__toolbar {
         padding: 0;
+        display: grid;
+        grid-template-columns: 245px 1fr 250px;
+        align-items: center;
     }
     
     &__menu-button {
@@ -47,4 +50,15 @@
             margin-right: 10px;
         }
     }
+
+    &__search {
+        padding: 0 95px;
+    }
+
+}
+
+.cashbox {
+    width: 250px;
+    height: 10px;
+    background-color: #fff;
 }
