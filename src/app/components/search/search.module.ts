@@ -5,9 +5,10 @@ import { SearchRoutingModule } from './search-routing.module';
 import { SearchComponent } from './search.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-// import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -17,9 +18,10 @@ import {MatListModule} from '@angular/material/list';
     SearchRoutingModule,
     MatInputModule,
     MatFormFieldModule,
-    // MatAutocompleteModule,
     ReactiveFormsModule,
     MatListModule,
+    MatButtonModule,
+    MatSelectModule
   ],
   exports : [SearchComponent]
 })

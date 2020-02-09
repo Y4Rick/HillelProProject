@@ -1,22 +1,56 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
 import { MousesService } from '../mouses/mouses.service';
+import { HeadphonesService } from '../headphones/headphones.service';
+import { KeyboardsService } from '../keyboards/keyboards.service';
+import * as _ from 'lodash';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
+  data: any;
+  sorted_dada: any;
 
   constructor(
-    private http: HttpClient,
-    ) { }
+    private mousesService: MousesService,
+    private headphonesService: HeadphonesService,
+    private keyboardsService: KeyboardsService,
+    ) {
+      this.mousesService.getMouses().subscribe(({ success, response }) => {
+        if (success) {
+          this.data = [];
+          this.data.push(response);
+          this.headphonesService.getHeadphones().subscribe(({ success, response }) => {
+            if (success) {
+              this.data.push(response);
+              this.keyboardsService.getKeyboards().subscribe(({ success, response }) => {
+                if (success) {
+                  this.data.push(response);
+                }
+              })
+            }
+          });
+        }
+      });
+  }
 
   getProducts(): Observable<any> {
-    return this.http.get(`assets/data/products/headphones/headphones.json`);
+    return of(this.data);
   }
 
   getSelectedProducts(query): Observable<any> {
-    return this.http.get(`assets/data/products/headphones/headphones.json`);
+    this.sorted_dada = { success: true , response: [] };
+    this.sorted_dada.response = _.cloneDeep(this.data);
+
+    this.sorted_dada.response.forEach(item => {
+        item.brands.forEach(item => {
+          item.items = item.items.filter(item => {
+            return item.name.toUpperCase().includes(query.toUpperCase());
+          });
+        });
+    });
+    
+    return of(this.sorted_dada);
   }
 }
