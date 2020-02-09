@@ -1,0 +1,50 @@
+@import '../../shared/theme.scss';
+
+.layout {
+    &__container {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    &__logo {
+        border: 3px solid;
+        border-radius: 50%;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    &__header {
+        padding: 10px 0;
+    }
+    
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        color: mat-color($primary);
+    }
+
+    &__toolbar {
+        padding: 0;
+    }
+    
+    &__menu-button {
+        display: flex;
+        height: 100%;
+        font-size: 22px;
+        border-radius: 0;
+        color: mat-color($primary, 50);
+        background-color: mat-color($primary);
+    
+        &-icon {
+            margin-right: 10px;
+        }
+    }
+}
