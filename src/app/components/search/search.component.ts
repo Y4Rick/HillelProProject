@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { ProductService } from 'src/app/services/product/product.service';
 
 @Component({
@@ -8,49 +8,39 @@ import { ProductService } from 'src/app/services/product/product.service';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  search = new FormControl();;
-  filtered_products = [];
-  show_list = false;
+  form: FormGroup;
+  filtered_products: any;
 
   constructor(
     private productService: ProductService,
-    ) {}
+    private fb: FormBuilder,
+    ) {
+      this.form = this.fb.group({
+        search: [''],
+      });
+    }
 
   ngOnInit(): void {
-    this.search.valueChanges.subscribe(query => {     
-      console.log('valueChanges', this.search);
-      this.filtered_products = [];
-      this.show_list = false;
-
+    this.form.get('search').valueChanges.subscribe(query => {
       if (query.length > 2) {
-        this.show_list = true;
         this.searchProducts(query);
       }
     });
-
-    console.log(this.search);
-    
-  }
-
-  rrr() {
-    console.log();
-    setTimeout(() => {
-      this.show_list = false;
-      
-    }, 500);
-  }
-
-  userSelected(e) {
-    console.log('click', e);
-    this.show_list = false;
   }
 
   searchProducts(query) {
     this.productService.getSelectedProducts(query).subscribe(({ success, response }) => {
       if (success) {
-        this.filtered_products = response;
-        console.log(this.filtered_products);
-        
+        this.filtered_products = response.reduce((acc, item) => {
+          let filteredItems = item.brands.reduce((acc, item) => {
+
+            acc.push(...item.items);
+            return acc;
+          }, []);
+
+          acc.push({ category: item.category, items: filteredItems})
+          return acc;
+        }, []);
       }
     });
   }

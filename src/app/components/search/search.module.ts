@@ -9,6 +9,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
     ReactiveFormsModule,
     MatListModule,
     MatButtonModule,
-    MatSelectModule
+    MatSelectModule,
+    MatAutocompleteModule,
   ],
   exports : [SearchComponent]
 })

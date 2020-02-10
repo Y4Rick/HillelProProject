@@ -1,7 +1,7 @@
 {
     "success": true,
     "response": {
-        "category": "headphones",
+        "category": "Наушники",
         "brands": [
             { 
                 "title": "Asus",
@@ -128,7 +128,7 @@
                 "items": [
                     { 
                         "name": "Наушники Sennheiser GSP 300",
-                        "code": 80000,
+                        "code": 80200,
                         "price": 2099,
                         "rating": 4.1,
                         "image": "/assets/data/images/headphones/sennheiser/sennheiser-gsp-300-black.jpg"

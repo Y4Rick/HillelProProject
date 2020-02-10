@@ -1,7 +1,7 @@
 {
     "success": true,
     "response": {
-        "category": "keyboards",
+        "category": "Клавиатуры",
         "brands": [
             { 
                 "title": "Corsair",
@@ -48,7 +48,7 @@
                 "items": [
                     { 
                         "name": "Клавиатура Kingston HyperX Alloy Core RGB",
-                        "code": 67817,
+                        "code": 68027,
                         "price": 1599,
                         "rating": 4.1,
                         "image": "/assets/data/images/keyboards/hyperX/kingston-hyperx-alloy-core-rgb-hx-kb5me2-ru-black.jpg"

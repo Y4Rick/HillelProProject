@@ -1,7 +1,7 @@
 {
     "success": true,
     "response": {
-        "category": "mouses",
+        "category": "Мышки",
         "brands": [
             { 
                 "title": "A4Tech",
@@ -48,7 +48,7 @@
                 "items": [
                     { 
                         "name": "Мышка Logitech G Pro Gaming Wireless Black",
-                        "code": 56217,
+                        "code": 56802,
                         "price": 3700,
                         "rating": 4.7,
                         "image": "/assets/data/images/mouses/logitech/logitech-g-pro-gaming-wireless-black.jpg"

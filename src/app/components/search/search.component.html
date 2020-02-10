@@ -1,20 +1,35 @@
 <div class="search">
-    <mat-form-field class="search__field">
-        <mat-label class="search__field-label">Поиск</mat-label>
-        <input type="search" matInput [formControl]="search" (blur)="rrr()">
-    </mat-form-field>
-    <div *ngIf="filtered_products.length > 0 && show_list">
-        <mat-list *ngIf="filtered_products.length > 0">
-            <mat-list-item *ngFor="let product of filtered_products"> 
-                <a (click)="userSelected($event)" matLine [routerLink]="[]">
-                    {{ product.category }}
-                </a>
-            </mat-list-item>
-        </mat-list>
-        <!-- <mat-option (optionSelected)="userSelected($event)" *ngFor="let product of filtered_products" [value]="product.category">
-            <a [routerLink]="['erorr']" >
-                {{ product.category }}
-            </a>
-          </mat-option> -->
-    </div>
+    <form [formGroup]="form">
+        <mat-form-field 
+            class="search__field" 
+            appearance="outline"
+        >
+            <mat-label>Поиск</mat-label>
+            <input type="search"
+                   matInput
+                   formControlName="search"
+                   [matAutocomplete]="search">
+            <mat-autocomplete
+                #search="matAutocomplete"
+            >
+                <mat-optgroup
+                    *ngFor="let item of filtered_products"
+                    [label]="item.category"
+                >
+                    <mat-option *ngFor="let product of item.items" [value]="product.name">
+                        <a
+                            [routerLink]="[
+                                '/',
+                                'main',
+                                'product',
+                                product.code
+                            ]"
+                        >
+                            {{ product.name }}
+                        </a>
+                    </mat-option>  
+                </mat-optgroup>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
 </div>
