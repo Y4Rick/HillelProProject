@@ -10,6 +10,7 @@ import { ProductService } from 'src/app/services/product/product.service';
 export class SearchComponent implements OnInit {
   form: FormGroup;
   filtered_products: any;
+  no_results = false;
 
   constructor(
     private productService: ProductService,
@@ -22,8 +23,14 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
     this.form.get('search').valueChanges.subscribe(query => {
+      this.no_results = false;
+
       if (query.length > 2) {
         this.searchProducts(query);
+
+        if (this.filtered_products.length === 0) {
+          this.no_results = true;
+        }
       }
     });
   }
@@ -41,7 +48,7 @@ export class SearchComponent implements OnInit {
           acc.push({ category: item.category, items: filteredItems})
           return acc;
         }, []);
-      }
+      };
     });
   }
 }

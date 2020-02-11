@@ -1,5 +1,5 @@
 <div class="search">
-    <form [formGroup]="form">
+    <form class="search__form" [formGroup]="form">
         <mat-form-field 
             class="search__field" 
             appearance="outline"
@@ -12,15 +12,18 @@
             <mat-autocomplete
                 #search="matAutocomplete"
             >
+                
                 <mat-optgroup
+                    class="search__optgroup"
                     *ngFor="let item of filtered_products"
                     [label]="item.category"
                 >
-                    <mat-option *ngFor="let product of item.items" [value]="product.name">
+                    <mat-option class="search__optgroup-option" *ngFor="let product of item.items" [value]="product.name">
                         <a
+                            class="search__optgroup-link"
                             [routerLink]="[
                                 '/',
-                                'main',
+                                'telemart.it.hillel',
                                 'product',
                                 product.code
                             ]"
@@ -31,5 +34,8 @@
                 </mat-optgroup>
             </mat-autocomplete>
         </mat-form-field>
+        <div *ngIf="no_results" class="search__no-results">
+            Нет результатов
+        </div>
     </form>
 </div>
