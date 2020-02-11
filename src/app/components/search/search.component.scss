@@ -46,6 +46,8 @@
             padding: 0 5px 0 30px;
             color: mat-color($primary);
             text-decoration: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 }

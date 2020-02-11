@@ -21,12 +21,7 @@
                     <mat-option class="search__optgroup-option" *ngFor="let product of item.items" [value]="product.name">
                         <a
                             class="search__optgroup-link"
-                            [routerLink]="[
-                                '/',
-                                'telemart.it.hillel',
-                                'product',
-                                product.code
-                            ]"
+                            [routerLink]="[product.productLink]"
                         >
                             {{ product.name }}
                         </a>

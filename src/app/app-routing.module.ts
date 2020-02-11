@@ -9,7 +9,6 @@ const routes: Routes = [
     pathMatch: 'full',
     redirectTo: '/telemart.it.hillel',
   },
-
   {
     path: 'telemart.it.hillel',
     children: [

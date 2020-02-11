@@ -40,6 +40,9 @@ export class SearchComponent implements OnInit {
       if (success) {
         this.filtered_products = response.reduce((acc, item) => {
           let filteredItems = item.brands.reduce((acc, item) => {
+            item.items.forEach(item => {
+              item.productLink = `product/${item.code}`;
+            });
 
             acc.push(...item.items);
             return acc;
