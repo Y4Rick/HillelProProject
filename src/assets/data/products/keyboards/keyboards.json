@@ -1,0 +1,168 @@
+{
+    "success": true,
+    "response": {
+        "category": "Клавиатуры",
+        "brands": [
+            { 
+                "title": "Corsair",
+                "items": [
+                    { 
+                        "name": "Игровая клавиатура Corsair K70 LUX Mechanical Cherry MX Red",
+                        "code": 46717,
+                        "price": 1949,
+                        "rating": 4.0,
+                        "image": "/assets/data/images/keyboards/corsair/corsair-k70-lux-mechanical-cherry-mx-red-ch-ru-black.jpg"
+                    },
+                    { 
+                        "name": "Игровая клавиатура Corsair K68 RGB Mechanical Cherry MX Red",
+                        "code": 48018,
+                        "price": 3159,
+                        "rating": 3.4,
+                        "image": "/assets/data/images/keyboards/corsair/corsair-k68-rgb-mechanical-cherry-mx-red-ch-ru-black.jpg"
+                    },
+                    { 
+                        "name": "Игровая клавиатура Corsair K70 RGB MK.2 Mechanical Cherry MX Red",
+                        "code": 11118,
+                        "price": 5255,
+                        "rating": 4.4,
+                        "image": "/assets/data/images/keyboards/corsair/corsair-k70-rgb-mk2-mechanical-cherry-mx-red-ch-ru-black.jpg"
+                    },
+                    { 
+                        "name": "Игровая клавиатура Corsair K70 LUX RGB Mechanical Cherry MX",
+                        "code": 57719,
+                        "price": 2500,
+                        "rating": 3.9,
+                        "image": "/assets/data/images/keyboards/corsair/corsair-k70-lux-rgb-mechanical-cherry-mx-ch-ru-brown.jpg"
+                    },
+                    { 
+                        "name": "Игровая клавиатура Corsair STRAFE Mechanical Cherry MX",
+                        "code": 64555,
+                        "price": 2200,
+                        "rating": 4.7,
+                        "image": "/assets/data/images/keyboards/corsair/corsair-strafe-mechanical-cherry-mx-ch-ru-red.jpg"
+                    }
+                ]
+            },
+            { 
+                "title": "HyperX",
+                "items": [
+                    { 
+                        "name": "Клавиатура Kingston HyperX Alloy Core RGB",
+                        "code": 68027,
+                        "price": 1599,
+                        "rating": 4.1,
+                        "image": "/assets/data/images/keyboards/hyperX/kingston-hyperx-alloy-core-rgb-hx-kb5me2-ru-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура Kingston HyperX Alloy FPS Pro Cherry MX Red",
+                        "code": 56790,
+                        "price": 2699,
+                        "rating": 3.4,
+                        "image": "/assets/data/images/keyboards/hyperX/kingston-hyperx-alloy-fps-pro-cherry-mx-red-hx-kb4rd1-rur1-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура Kingston HyperX Alloy Origins Core",
+                        "code": 56745,
+                        "price": 2899,
+                        "rating": 3.7,
+                        "image": "/assets/data/images/keyboards/hyperX/kingston-hyperx-alloy-origins-core-hx-kb7rdx-ru-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура Kingston HyperX Alloy FPS Cherry MX Blue",
+                        "code": 53225,
+                        "price": 3009,
+                        "rating": 4.2,
+                        "image": "/assets/data/images/keyboards/hyperX/kingston-hyperx-alloy-fps-blue-hx-kb1bl1-rua5.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура Kingston HyperX Alloy FPS RGB Kailh Silver Speed",
+                        "code": 590045,
+                        "price": 3200,
+                        "rating": 3.7,
+                        "image": "/assets/data/images/keyboards/hyperX/kingston-hyperx-alloy-fps-rgb-kailh-silver-speed.png"
+                    }
+                ]
+            },
+            { 
+                "title": "MSI",
+                "items": [
+                    { 
+                        "name": "Клавиатура MSI INTERCEPTOR GAMING DS4100",
+                        "code": 590045,
+                        "price": 788,
+                        "rating": 4.2,
+                        "image": "/assets/data/images/keyboards/msi/msi-interceptor-ds4100-gaming-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура MSI VIGOR GK70 Cherry MX RGB Red",
+                        "code": 80811,
+                        "price": 3569,
+                        "rating": 4.3,
+                        "image": "/assets/data/images/keyboards/msi/msi-vigor-gk70-red.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура MSI VIGOR GK30 Mech.Membrane Black",
+                        "code": 89307,
+                        "price": 1499,
+                        "rating": 3.1,
+                        "image": "/assets/data/images/keyboards/msi/msi-vigor-gk30-mechmembrane-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура MSI VIGOR GK60 Cherry MX Red",
+                        "code": 77707,
+                        "price": 2300,
+                        "rating": 3.7,
+                        "image": "/assets/data/images/keyboards/msi/msi-vigor-gk60-cherry-mx-red.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура MSI VIGOR GK40",
+                        "code": 80090,
+                        "price": 1599,
+                        "rating": 4.9,
+                        "image": "/assets/data/images/keyboards/msi/msi-vigor-gk40-black.jpg"
+                    }
+                ]
+            },
+            { 
+                "title": "Cougar",
+                "items": [
+                    { 
+                        "name": "Клавиатура Cougar VANTAR Membrane",
+                        "code": 80090,
+                        "price": 1599,
+                        "rating": 4.9,
+                        "image": "/assets/data/images/keyboards/cougar/cougar-vantar-membrane-cgr-wxnmb-van-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура Cougar Core EX RGB Hybrid Mechanical Switches Black",
+                        "code": 86080,
+                        "price": 2540,
+                        "rating": 2.9,
+                        "image": "/assets/data/images/keyboards/cougar/cougar-core-ex-rgb-hybrid-mechanical-switches-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура Cougar Aurora S RGB Black",
+                        "code": 19940,
+                        "price": 789,
+                        "rating": 4.9,
+                        "image": "/assets/data/images/keyboards/cougar/cougar-aurora-s-rgb-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура Cougar ATTACK X3 Mechanical RGB Speedy Black",
+                        "code": 15343,
+                        "price": 899,
+                        "rating": 3.1,
+                        "image": "/assets/data/images/keyboards/cougar/cougar-attack-x3-mechanical-rgb-speedy-black.jpg"
+                    },
+                    { 
+                        "name": "Клавиатура Cougar ULTIMUS RGB World of Tanks Edition Mechanical Blue Switches",
+                        "code": 88888,
+                        "price": 2100,
+                        "rating": 4.1,
+                        "image": "/assets/data/images/keyboards/cougar/cougar-ultimus-rgb-world-of-tanks-edition-mechanical-blue-switches-black.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

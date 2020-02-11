@@ -1,0 +1,168 @@
+{
+    "success": true,
+    "response": {
+        "category": "Наушники",
+        "brands": [
+            { 
+                "title": "Asus",
+                "items": [
+                    { 
+                        "name": "Наушники Asus ROG Strix Fusion 300",
+                        "code": 44447,
+                        "price": 2999,
+                        "rating": 4.1,
+                        "image": "/assets/data/images/headphones/asus/asus-rog-strix-fusion-300-90yh00z1-b8ua00-blackred.jpg"
+                    },
+                    { 
+                        "name": "Наушники Asus TUF Gaming H5 USB",
+                        "code": 44545,
+                        "price": 2400,
+                        "rating": 3.9,
+                        "image": "/assets/data/images/headphones/asus/asus-tuf-gaming-h5-usb-90yh00z5-b8ua00-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники Asus ROG Delta Core",
+                        "code": 89890,
+                        "price": 3200,
+                        "rating": 4.9,
+                        "image": "/assets/data/images/headphones/asus/asus-rog-delta-core-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники Asus ROG Strix Fusion 500",
+                        "code": 43210,
+                        "price": 800,
+                        "rating": 3.1,
+                        "image": "/assets/data/images/headphones/asus/asus-rog-strix-fusion-500-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники Asus ROG Strix Fusion Wireless",
+                        "code": 96457,
+                        "price": 2150,
+                        "rating": 4.9,
+                        "image": "/assets/data/images/headphones/asus/asus-rog-strix-fusion-wireless-black.jpg"
+                    }
+                ]
+            },
+            { 
+                "title": "Bloody",
+                "items": [
+                    { 
+                        "name": "Наушники A4Tech Bloody M660 MOCI",
+                        "code": 67567,
+                        "price": 1699,
+                        "rating": 4.2,
+                        "image": "/assets/data/images/headphones/bloody/a4tech-m660-golden.jpg"
+                    },
+                    { 
+                        "name": "Наушники A4Tech Bloody G530",
+                        "code": 56690,
+                        "price": 3290,
+                        "rating": 3.1,
+                        "image": "/assets/data/images/headphones/bloody/a4tech-bloody-g530-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники A4Tech Bloody G520",
+                        "code": 56005,
+                        "price": 3000,
+                        "rating": 2.7,
+                        "image": "/assets/data/images/headphones/bloody/a4tech-bloody-g520-blackgrey.jpg"
+                    },
+                    { 
+                        "name": "Наушники A4Tech Bloody J437 Army Green",
+                        "code": 10025,
+                        "price": 1899,
+                        "rating": 4.0,
+                        "image": "/assets/data/images/headphones/bloody/a4tech-bloody-j437-army-green.jpg"
+                    },
+                    { 
+                        "name": "Наушники A4Tech Bloody G300",
+                        "code": 539045,
+                        "price": 4300,
+                        "rating": 3.9,
+                        "image": "/assets/data/images/headphones/bloody/a4tech-bloody-g300-blackred.jpg"
+                    }
+                ]
+            },
+            { 
+                "title": "Panasonic",
+                "items": [
+                    { 
+                        "name": "Наушники Panasonic RP-HTX80BGCR Red",
+                        "code": 590665,
+                        "price": 1458,
+                        "rating": 3.7,
+                        "image": "/assets/data/images/headphones/panasonic/panasonic-rp-htx80bgcr-red.jpg"
+                    },
+                    { 
+                        "name": "Наушники Panasonic RP-DH1200E-S Silver",
+                        "code": 11811,
+                        "price": 359,
+                        "rating": 4.0,
+                        "image": "/assets/data/images/headphones/panasonic/panasonic-rp-dh1200e-s-silver.jpg"
+                    },
+                    { 
+                        "name": "Наушники Panasonic RP-DJ1210E-S Silver",
+                        "code": 87207,
+                        "price": 1109,
+                        "rating": 3.0,
+                        "image": "/assets/data/images/headphones/panasonic/panasonic-rp-dj1210e-s.jpg"
+                    },
+                    { 
+                        "name": "Наушники Panasonic RP-HD6MGC-K Black",
+                        "code": 77007,
+                        "price": 3400,
+                        "rating": 3.9,
+                        "image": "/assets/data/images/headphones/panasonic/panasonic-rp-hd6mgc-k-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники Panasonic RP-HTF295E-K Black",
+                        "code": 80990,
+                        "price": 2799,
+                        "rating": 5.0,
+                        "image": "/assets/data/images/headphones/panasonic/panasonic-rp-htf295e-k.jpg"
+                    }
+                ]
+            },
+            { 
+                "title": "Sennheiser",
+                "items": [
+                    { 
+                        "name": "Наушники Sennheiser GSP 300",
+                        "code": 80200,
+                        "price": 2099,
+                        "rating": 4.1,
+                        "image": "/assets/data/images/headphones/sennheiser/sennheiser-gsp-300-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники Sennheiser GSP 550",
+                        "code": 88880,
+                        "price": 2500,
+                        "rating": 2.7,
+                        "image": "/assets/data/images/headphones/sennheiser/sennheiser-gsp-550-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники Sennheiser HD 400S",
+                        "code": 19333,
+                        "price": 989,
+                        "rating": 3.3,
+                        "image": "/assets/data/images/headphones/sennheiser/sennheiser-hd-400s-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники Sennheiser HD 569",
+                        "code": 15043,
+                        "price": 1430,
+                        "rating": 3.0,
+                        "image": "/assets/data/images/headphones/sennheiser/sennheiser-hd-569-black.jpg"
+                    },
+                    { 
+                        "name": "Наушники Sennheiser GSP 600",
+                        "code": 87788,
+                        "price": 2700,
+                        "rating": 4.0,
+                        "image": "/assets/data/images/headphones/sennheiser/sennheiser-gsp-600-black.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

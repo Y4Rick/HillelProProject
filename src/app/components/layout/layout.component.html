@@ -1,18 +1,31 @@
 <div class="layout__container">
     <header class="layout__header">
         <div class="layout__head">
-            <mat-icon class="layout__logo" color="primary">desktop_windows</mat-icon>
-            <h1 class="layout__title">Telemart Hillel Pro Project</h1>
+            <mat-icon 
+                class="layout__logo" 
+                color="primary"
+            >
+                desktop_windows
+            </mat-icon>
+            <h1 class="layout__title">
+                Telemart Hillel Pro Project
+            </h1>
         </div>
         <mat-toolbar class="layout__toolbar">
             <button
                 class="layout__menu-button"
                 mat-button
                 [matMenuTriggerFor]="menu"
+            >
+                <mat-icon 
+                    class="layout__menu-button-icon"
                 >
-                    <mat-icon class="layout__menu-button-icon">menu</mat-icon>
-                    <span>Каталог товаров</span>
+                    menu
+                </mat-icon>
+                <span>Каталог товаров</span>
             </button>
+            <app-search class="layout__search"></app-search>
+            <div class="cashbox"></div>
         </mat-toolbar>
         <mat-menu #menu="matMenu">
             <button mat-menu-item>

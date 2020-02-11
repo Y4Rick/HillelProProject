@@ -1,0 +1,35 @@
+<div class="search">
+    <form [formGroup]="form">
+        <mat-form-field 
+            class="search__field" 
+            appearance="outline"
+        >
+            <mat-label>Поиск</mat-label>
+            <input type="search"
+                   matInput
+                   formControlName="search"
+                   [matAutocomplete]="search">
+            <mat-autocomplete
+                #search="matAutocomplete"
+            >
+                <mat-optgroup
+                    *ngFor="let item of filtered_products"
+                    [label]="item.category"
+                >
+                    <mat-option *ngFor="let product of item.items" [value]="product.name">
+                        <a
+                            [routerLink]="[
+                                '/',
+                                'main',
+                                'product',
+                                product.code
+                            ]"
+                        >
+                            {{ product.name }}
+                        </a>
+                    </mat-option>  
+                </mat-optgroup>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
+</div>

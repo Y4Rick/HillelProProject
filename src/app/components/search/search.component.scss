@@ -1,0 +1,19 @@
+@import '../../shared/theme.scss';
+
+.search {
+    font-size: 14px;
+
+    &__field {
+        width: 100%;
+
+        &::ng-deep {
+            .mat-form-field-wrapper {
+                padding: 0;
+            }
+        }
+        
+        &-label {
+            color: mat-color($primary);
+        }
+    }
+}
