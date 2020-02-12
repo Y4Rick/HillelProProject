@@ -1,0 +1,26 @@
+<nav mat-tab-nav-bar>
+    <a mat-tab-link
+       *ngFor="let link of nav_links"
+       [routerLink]="link.path"
+       routerLinkActive #rla="routerLinkActive"
+       [active]="rla.isActive">
+      {{link.label}}
+    </a>
+</nav>
+
+<div class="product-container__offer">
+    <div class="product-container__offer-wrap">
+        <div class="product-container__offer-item">
+            <span class="product-container__offer-item-price">567 грн.</span>
+            <button 
+                mat-button
+                class="product-container__offer-item-bay"
+            >
+                <mat-icon>shopping_cart</mat-icon>
+                <span>Купить</span>
+            </button>
+        </div>
+    </div>
+</div>
+  
+<router-outlet></router-outlet>
