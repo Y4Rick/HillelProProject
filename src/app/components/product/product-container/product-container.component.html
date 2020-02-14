@@ -7,20 +7,95 @@
       {{link.label}}
     </a>
 </nav>
-
-<div class="product-container__offer">
-    <div class="product-container__offer-wrap">
-        <div class="product-container__offer-item">
-            <span class="product-container__offer-item-price">567 грн.</span>
-            <button 
-                mat-button
-                class="product-container__offer-item-bay"
-            >
-                <mat-icon>shopping_cart</mat-icon>
-                <span>Купить</span>
-            </button>
+<div class="product-container__content">
+    <div class="product-container__content-router">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="product-container__content-offer">
+        <div class="product-container__content-offer-wrap">
+            <div class="product-container__content-offer-item">
+                <span class="product-container__content-offer-item-price">567 грн.</span>
+                <button 
+                    mat-button
+                    class="product-container__content-offer-item-bay"
+                >
+                    <mat-icon>shopping_cart</mat-icon>
+                    <span>Купить</span>
+                </button>
+            </div>
+        </div>
+        <div class="product-container__content-offer-wrap">
+            <div class="delivery">
+                <div class="delivery__header">
+                    <h2 class="delivery__header-title">Доставка:</h2>
+                    <mat-tab-group 
+                        class="tabs" 
+                        mat-align-tabs="start" 
+                        #tabGroup 
+                        (selectedTabChange)="tabChanged($event)"
+                    >
+                        <mat-tab 
+                            *ngFor="let del of delivery_tabs" 
+                            [label]="del.label"
+                        >
+                        </mat-tab>
+                    </mat-tab-group>
+                </div>
+                <div class="delivery__content">
+                    <ng-container *ngFor="let del of delivery_tabs; let i = index">
+                        <div *ngIf="headTemplate === i">
+                            <div 
+                                class="delivery__content-box-table" 
+                                *ngFor="let company of del.companies"
+                            >
+                                <h3 class="delivery__content-title">{{ company.title }}</h3>
+                                <table 
+                                    class="delivery__content-table" 
+                                    mat-table 
+                                    [dataSource]="company.terms"
+                                >
+                                        <ng-container matColumnDef="title">
+                                            <td 
+                                                class="delivery__content-table-cell delivery__content-table-cell--left" 
+                                                mat-cell 
+                                                *matCellDef="let element"
+                                            > 
+                                                {{element.term}}
+                                            </td>
+                                        </ng-container>
+                                        <ng-container matColumnDef="cost">
+                                            <td 
+                                                class="delivery__content-table-cell delivery__content-table-cell--center" 
+                                                mat-cell 
+                                                *matCellDef="let element"
+                                            > 
+                                                <span class="delivery__content-table-price">{{element.cost}}</span>
+                                            </td>
+                                        </ng-container>
+                                        <ng-container matColumnDef="time">
+                                            <td 
+                                                class="delivery__content-table-cell delivery__content-table-cell--right" 
+                                                mat-cell 
+                                                *matCellDef="let element"
+                                            > 
+                                                <span *ngIf="element.time">
+                                                    Отправка: <span class="delivery__content-table-delivery">{{element.time}}</span> 
+                                                </span>
+                                            </td>
+                                        </ng-container>
+                                    <tr 
+                                        class="delivery__content-table-row" 
+                                        mat-row 
+                                        *matRowDef="let row; columns: displayedColumns;"
+                                    ></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
   
-<router-outlet></router-outlet>

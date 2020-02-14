@@ -1,34 +1,125 @@
 @import '../../../shared/theme.scss';
 
  .product-container {
-     &__offer  {
-         width: 50%;
-         padding: 20px 15px;
-         float: right;
+     &__content {
+        display: grid;
+        grid-template-columns: 50% 50%;
 
-         &-wrap {
-             padding: 25px 30px;
-             box-shadow: 0 1px 5px mat-color($primary, 900);
-         }
+        &-router {
+            padding: 20px 15px;
+            padding-left: 0;
+        }
 
-         &-item {
-             display: flex;
-             align-items: center;
-             justify-content: space-between;
-
-            &-price {
-                flex-grow: 1;
-                font-size: 24px;
-                font-weight: 600;
-                line-height: 40px;
-             }
-
-             &-bay {
-                 flex-grow: 1;
-                 padding: 5px;
-                 color: mat-color($primary, 50);
-                 background-color: mat-color($primary, 400);
-             }
-         }
+        &-offer  {
+            display: grid;
+            grid-row-gap: 20px;
+            padding: 20px 15px;
+            padding-right: 0;
+   
+            &-wrap {
+                padding: 25px;
+                box-shadow: 0 1px 5px mat-color($primary, 900);
+            }
+   
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+   
+               &-price {
+                   flex-grow: 1;
+                   font-size: 24px;
+                   font-weight: 600;
+                   line-height: 40px;
+                }
+   
+                &-bay {
+                    flex-grow: 1;
+                    padding: 5px;
+                    color: mat-color($primary, 50);
+                    background-color: mat-color($primary, 400);
+                }
+            }
+        }
      }
  }
+
+ .delivery {
+     &__header {
+         display: flex;
+         align-items: center;
+
+         &-title {
+            margin: 0;
+            padding: 0px;
+            font-weight: 400;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        &::ng-deep {
+            .mat-tab-label {
+                height: auto;
+                padding: 4px 12px;
+                font-size: 12px;
+                font-weight: 400;
+                min-width: auto;
+            }
+        }
+     }
+
+     &__content {
+         &-box-table {
+            padding-top: 10px;
+         }
+
+         &-title {
+            padding: 0;
+            margin: 0;
+            color: mat-color($primary);
+         }
+
+         &-table {
+            width: 100%;
+
+            &-row {
+                height: auto;
+            }
+
+            td.mat-cell:last-of-type,
+            td.mat-cell:first-of-type {
+                padding: 0;
+                margin: 0;
+                font-size: 13px;
+            }
+
+            &-price {
+                color: darken(mat-color($warn), 5%);
+                font-weight: 500;
+            }
+
+            &-delivery {
+                color: darken(mat-color($warn), 5%);
+                font-weight: 500;
+            }
+
+            &-cell {
+                padding: 0;
+                margin: 0;
+                font-size: 13px;
+
+                &--left.mat-cell {
+                    text-align: left;
+                }
+
+                &--center.mat-cell {
+                    text-align: center;
+                }
+
+                &--right.mat-cell {
+                    text-align: right;
+                }
+            }
+         }
+     }
+}

@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ProductContainerComponent } from './product-container/product-container.component';
 import { MatIconModule } from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [ProductContainerComponent],
@@ -14,7 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatTabsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   exports: []
 })
