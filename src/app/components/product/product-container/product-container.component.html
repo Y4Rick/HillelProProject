@@ -42,11 +42,11 @@
                     </mat-tab-group>
                 </div>
                 <div class="delivery__content">
-                    <ng-container *ngFor="let del of delivery_tabs; let i = index">
+                    <ng-container *ngFor="let del_company of delivery_companies; let i = index">
                         <div *ngIf="headTemplate === i">
                             <div 
                                 class="delivery__content-box-table" 
-                                *ngFor="let company of del.companies"
+                                *ngFor="let company of del_company"
                             >
                                 <h3 class="delivery__content-title">{{ company.title }}</h3>
                                 <table 

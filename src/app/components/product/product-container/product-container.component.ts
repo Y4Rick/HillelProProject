@@ -1,4 +1,8 @@
 import { Component, OnInit, Input, ViewChild, TemplateRef } from '@angular/core';
+import { DeliveryService } from '../../../services/delivery/delivery.service';
+import { GlobalService } from 'src/app/services/global/global.service';
+import { ActivatedRoute } from '@angular/router';
+import { ProductService } from 'src/app/services/product/product.service';
 
 @Component({
   selector: 'app-product-container',
@@ -8,160 +12,68 @@ import { Component, OnInit, Input, ViewChild, TemplateRef } from '@angular/core'
 export class ProductContainerComponent implements OnInit {
   nav_links = [];
   delivery_tabs = [];
+  delivery_companies = [];
   headTemplate = 0;
   displayedColumns: string[] = ['title', 'cost', 'time'];
+  product_id;
 
-  constructor() {
-    this.pushLinks(this.nav_links);
-    this.showDeliveryTabs(this.delivery_tabs);
+  get product() {
+    return this.globalSevice.product;
   }
 
+  constructor(
+    private deliveryService: DeliveryService,
+    private globalSevice: GlobalService,
+    private productService: ProductService,
+    private route: ActivatedRoute,
+    ) {
+      this.pushLinks(this.nav_links);
+
+      this.route.parent.params.subscribe((params) => {
+        this.product_id = params['product_id'];
+        this.getProduct(this.product_id);
+      });
+  }
+  
   ngOnInit(): void {
-    console.log(this.delivery_tabs);
-    
+    this.getDelivery();
   }
 
-  showDeliveryTabs(array) {
-    array.push(
-      {
-        label: 'КИЕВ',
-        slug: 'kv',
-        companies: [
-          { 
-            title: 'Нова Пошта',
-            terms: [
-              { 
-                term: 'Самовывоз из отделения',
-                cost: '50 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером до дверей',
-                cost: '50 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером Локал Экспресс до дверей',
-                cost: '50 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером Локал Экспресс до дверей',
-                cost: '50 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Без комиссии за наложенный платеж',
-                cost: '',
-                time: '',
-              }
-            ],
-          },
-          {
-            title: 'Meest Express',
-            terms: [
-              { 
-                term: 'Курьером до дверей',
-                cost: 'бесплатно',
-                time: 'сегодня',
-              },
-              { 
-                term: 'Без комиссии за наложенный платеж',
-                cost: '',
-                time: '',
-              },
-            ],
-          }
-        ],
-      },
-      {
-        label: 'ОДЕССА',
-        slug: 'od',
-        companies: [
-          { 
-            title: 'Нова Пошта',
-            terms: [
-              { 
-                term: 'Самовывоз из отделения',
-                cost: '45 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером до дверей',
-                cost: '50 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером Локал Экспресс до дверей',
-                cost: '45 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером Локал Экспресс до дверей',
-                cost: '45 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Без комиссии за наложенный платеж',
-                cost: '',
-                time: '',
-              }
-            ],
-          },
-          {
-            title: 'Meest Express',
-            terms: [
-              { 
-                term: 'Курьером до дверей',
-                cost: 'бесплатно',
-                time: 'сегодня',
-              },
-              { 
-                term: 'Без комиссии за наложенный платеж',
-                cost: '',
-                time: '',
-              },
-            ],
-          }
-        ],
-      },
-      {
-        label: 'ЛЬВОВ',
-        slug: 'lv',
-        companies: [
-          { 
-            title: 'Нова Пошта',
-            terms: [
-              { 
-                term: 'Самовывоз из отделения',
-                cost: '55 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером до дверей',
-                cost: '55 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером Локал Экспресс до дверей',
-                cost: '55 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Курьером Локал Экспресс до дверей',
-                cost: '55 грн.',
-                time: 'завтра',
-              },
-              { 
-                term: 'Без комиссии за наложенный платеж',
-                cost: '',
-                time: '',
-              }
-            ],
-          },
-        ],
+  getProduct(code) {
+    this.productService.getProduct().subscribe(({ success, response }) => {
+      if (success) {
+        let products: any;
+
+        setTimeout(() => {
+          products = response.reduce((acc, item) => {
+
+            let brands = item.brands.reduce((acc, item) => {
+            
+              acc.push(...item.items);              
+              return acc;
+            }, []);
+
+            acc.push(...brands)
+            return acc;
+            
+          }, []);
+
+          this.globalSevice.product = products.find(item => item.code === Number.parseInt(code) );
+        }, 500);
       }
-    );
+    })
+  }
+
+  getDelivery() {
+    this.deliveryService.getDeliveriesInfo().subscribe(({ success, response }) => {      
+      if (success) {
+        this.delivery_tabs = response;
+        this.delivery_companies = response.reduce((acc, item) => {
+          acc.push(item.companies);
+          return acc;
+        }, []);                
+      }
+    });
   }
 
   pushLinks(array) {

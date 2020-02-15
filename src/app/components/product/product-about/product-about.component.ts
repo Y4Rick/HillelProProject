@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from '../../../services/global/global.service';
 
 @Component({
   selector: 'app-product-about',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductAboutComponent implements OnInit {
 
-  constructor() { }
+  get product() {
+    return this.globalSevice.product;
+  }
+  constructor(private globalSevice: GlobalService) { }
 
   ngOnInit(): void {
   }

@@ -17,7 +17,7 @@ const routes: Routes = [
         component: LayoutComponent,
         children: [
           {
-            path: 'product/:id',
+            path: 'product/:product_id',
             loadChildren: './components/product/product.module#ProductModule',
           },
         ],
