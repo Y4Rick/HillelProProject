@@ -1,0 +1,41 @@
+<div *ngIf="product" class="product-about">
+    <div class="product-about__container">
+        <div class="product-about__header">
+            <span class="product-about__header-title">
+                Код:
+                <span class="product-about__header-code">
+                    {{ product.code }}
+                </span>
+            </span>
+            <span 
+                *ngIf="product.rating"
+                class="product-about__header-rating" 
+                [ngClass]="product.rating > 4 ? 'rating-good' : 'rating-bad'"
+            >
+                {{ product.rating.toFixed(1) }}
+            </span>
+        </div>
+        <div class="product-about__content">
+            <div class="product-about__content-wrap-img">
+                <img class="product-about__content-img" [src]="product.image">
+            </div>
+            <div class="product-about__content-short">
+                <span class="product-about__content-short-title">Краткие характеристики:</span>
+                <div class="product-about__content-short-detail">
+                    <div class="product-about__content-short-item">
+                        Назначение: <span class="product-about__content-short-item-span">{{product.usage}}</span>
+                    </div>
+                    <div class="product-about__content-short-item">
+                        Подключение: <span class="product-about__content-short-item-span">{{product.connection}}</span>
+                    </div>
+                    <div class="product-about__content-short-item">
+                        Чувствительность: <span class="product-about__content-short-item-span">{{product.sensitivity}}</span>
+                    </div>
+                    <div class="product-about__content-short-item">
+                        Количество кнопок: <span class="product-about__content-short-item-span">{{product.buttons}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

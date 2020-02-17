@@ -1,0 +1,15 @@
+@import '../../../shared/theme.scss';
+
+:host {
+    width: 100%;
+}
+
+.product-description {
+    display: grid;
+    height: 100%;
+
+    &__container {
+        padding: 25px;
+        box-shadow: 0 1px 5px mat-color($primary, 900);
+    }
+}

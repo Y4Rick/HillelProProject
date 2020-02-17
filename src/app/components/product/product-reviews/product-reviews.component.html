@@ -1,0 +1,28 @@
+<div *ngIf="product" class="product-reviews">
+    <div class="product-reviews__container">
+        <div class="product-reviews__header">
+            <button 
+                class="product-reviews__header-button" 
+                mat-raised-button
+                (click)="openDialog()"
+            >
+                Оставить отзыв
+            </button>
+        </div>
+        <ng-container *ngIf="product.reviews">
+            <div class="product-reviews__content">
+                <div *ngFor="let rew of product.reviews" class="product-reviews__content-review">
+                    <div class="product-reviews__content-review-item">
+                        <span class="product-reviews__content-review-auth">
+                            {{rew.auth.first}} {{rew.auth.second}}
+                        </span>
+                        <span class="product-reviews__content-review-date">
+                            {{rew.date}}
+                        </span>
+                    </div>
+                    <p>{{rew.massage}}</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

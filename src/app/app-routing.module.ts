@@ -7,18 +7,22 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/main',
+    redirectTo: '/telemart.it.hillel',
   },
   {
-    path: '',
-    component: LayoutComponent,
+    path: 'telemart.it.hillel',
     children: [
       {
-        path: 'main',
-        pathMatch: 'full',
-        loadChildren: './components/layout/layout.module#LayoutModule',
-      },
-    ]
+        path: '',
+        component: LayoutComponent,
+        children: [
+          {
+            path: 'product/:product_id',
+            loadChildren: './components/product/product.module#ProductModule',
+          },
+        ],
+      }
+    ],
   },
 ];
 

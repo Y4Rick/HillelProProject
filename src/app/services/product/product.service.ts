@@ -10,7 +10,6 @@ import * as _ from 'lodash';
 })
 export class ProductService {
   data: any;
-  sorted_dada: any;
 
   constructor(
     private mousesService: MousesService,
@@ -43,10 +42,10 @@ export class ProductService {
   }
 
   getSelectedProducts(query): Observable<any> {
-    this.sorted_dada = { success: true , response: [] };
-    this.sorted_dada.response = _.cloneDeep(this.data);
+    const sorted_dada = { success: true , response: [] };
+          sorted_dada.response = _.cloneDeep(this.data);
     
-    this.sorted_dada.response = this.sorted_dada.response.filter(item => {
+    sorted_dada.response = sorted_dada.response.filter(item => {
       item.brands = item.brands.filter(item => {
         item.items = item.items.filter(item => {
           return item.name.toUpperCase().includes(query.toUpperCase())
@@ -57,6 +56,15 @@ export class ProductService {
       return item.brands.length > 0;
   });
 
-    return of(this.sorted_dada);
+    return of(sorted_dada);
+  };
+
+  getProduct(): Observable<any> {
+    return of({ success: true , response: this.data});
+  }
+
+  addReview(product, value): Observable<any> {
+    product.reviews.push(value);    
+    return of(product);
   }
 }

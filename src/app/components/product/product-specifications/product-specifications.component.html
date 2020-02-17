@@ -1,0 +1,91 @@
+
+<div *ngIf="product" class="product-specifications">
+    <div class="product-specifications__container">
+        
+        <h2 class="product-specifications-title">Основные</h2>
+        <div class="product-specifications-content">
+            <p class="product-specifications-content-item">
+                <span>Тип мышки</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.main.type}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Назначение</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.main.usage}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Форма корпуса</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.main.corpus}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Подключение</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.main.connection}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Интерфейс подключения</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.main.interface}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Чувствительность</span> 
+                <span class="product-specifications-content-info">
+                    {{product.description.main.sensivity}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Количество программируемых кнопок</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.main.buttons}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Длина провода</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.main.tier}}
+                </span>
+            </p>
+        </div>
+        
+        <h2 class="product-specifications-title">Дополнительно</h2>
+        <div class="product-specifications-content">
+            <p class="product-specifications-content-item">
+                <span>Частота опроса</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.additional.polling}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Акселерация</span> 
+                <span class="product-specifications-content-info">
+                    {{product.description.additional.acceleration}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Габариты</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.additional.dimensions}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Вес</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.additional.wight}}
+                </span>
+            </p>
+            <p class="product-specifications-content-item">
+                <span>Цвет</span>	
+                <span class="product-specifications-content-info">
+                    {{product.description.additional.color}}
+                </span>
+            </p>
+        </div>
+    </div>
+</div>

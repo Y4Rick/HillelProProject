@@ -1,0 +1,47 @@
+<h2 mat-dialog-title>Напишите отзыв</h2>
+<mat-dialog-content [formGroup]="form" class="product-reviews-dialog__form">
+    <mat-form-field class="product-reviews-dialog__form-field">
+        <mat-label>Имя</mat-label>
+        <input formControlName="first" matInput required>
+        <mat-error *ngIf="this.form.get('first').hasError('required')">Обязательное поле</mat-error>
+    </mat-form-field>
+    <mat-form-field class="product-reviews-dialog__form-field">
+        <mat-label>Фамилия</mat-label>
+        <input formControlName="second" matInput required>
+        <mat-error *ngIf="this.form.get('second').hasError('required')">Обязательное поле</mat-error>
+    </mat-form-field>
+    <mat-form-field
+        class="product-reviews-dialog__form-field product-reviews-dialog__form-field--textarea"
+        appearance="outline"
+    >
+        <mat-label>Комментарий</mat-label>
+        <textarea
+            formControlName="massage"
+            matInput
+            cdkTextareaAutosize
+            cdkAutosizeMinRows="4"
+            cdkAutosizeMaxRows="10"
+            formControlName="massage"
+            required
+        ></textarea>
+        <mat-error *ngIf="this.form.get('massage').hasError('required')">Обязательное поле</mat-error>
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions class="product-reviews-dialog__form-buttons">
+    <button
+        mat-raised-button
+        type="submit"
+        class="product-reviews-dialog__form-button"
+        [disabled]="this.form.invalid"
+        (click)="submit()"
+        >
+        Добавить
+    </button>
+    <button
+        class="product-reviews-dialog__form-button"
+        mat-raised-button
+        mat-dialog-close
+    >
+        Закрыть
+    </button>
+</mat-dialog-actions>

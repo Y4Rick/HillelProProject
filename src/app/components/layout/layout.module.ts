@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import { Overlay } from '@angular/cdk/overlay';
 import { SearchModule } from '../search/search.module';
+import { ProductModule } from '../product/product.module';
 
 @NgModule({
   declarations: [LayoutComponent],
@@ -20,6 +21,7 @@ import { SearchModule } from '../search/search.module';
     MatToolbarModule,
     MatMenuModule,
     SearchModule,
+    ProductModule,
   ],
   providers : [Overlay]
 })
