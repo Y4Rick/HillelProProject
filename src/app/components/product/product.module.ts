@@ -6,6 +6,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { ProductContainerComponent } from './product-container/product-container.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
+import { ProductAboutModule } from './product-about/product-about.module';
+import { ProductDescriptionModule } from './product-description/product-description.module';
+import { ProductSpecificationsModule } from './product-specifications/product-specifications.module';
+import { ProductReviewsModule } from './product-reviews/product-reviews.module';
 
 @NgModule({
   declarations: [ProductContainerComponent],
@@ -14,9 +18,12 @@ import {MatTableModule} from '@angular/material/table';
     ProductRoutingModule,
     MatButtonModule,
     MatTabsModule,
-    MatButtonModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    ProductAboutModule,
+    ProductDescriptionModule,
+    ProductSpecificationsModule,
+    ProductReviewsModule,
   ],
   exports: []
 })

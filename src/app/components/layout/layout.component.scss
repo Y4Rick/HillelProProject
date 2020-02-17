@@ -1,5 +1,10 @@
 @import '../../shared/theme.scss';
 
+:host {
+    min-height: 100%;
+    display: flex;
+}
+
 .layout {
     &__container {
         width: 100%;

@@ -1,0 +1,68 @@
+@import '../../../shared/theme.scss';
+
+:host {
+    width: 100%;
+}
+
+.product-reviews {
+    display: grid;
+    height: 100%;
+
+    &__container {
+        padding: 25px;
+        box-shadow: 0 1px 5px mat-color($primary, 900);
+    }
+
+    &__header {
+        text-align: right;
+    }
+
+    &__content {
+        margin-top: 10px;
+        display: grid;
+        grid-row-gap: 15px;
+
+        &-review {
+            border: 1px solid rgba(mat-color($primary, 900), 0.25);
+            padding: 10px;
+            border-radius: 16px;
+
+            &-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &-auth {
+                font-weight: 500;
+            }
+
+            &-date {
+                font-size: 10px;
+                color: darken(mat-color($warn), 5%)
+            }
+        }
+    }
+
+    &-dialog {
+        &__form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px 30px;
+
+            &-field {
+                &--textarea {
+                    grid-column-start: 1;
+                    grid-column-end: -1;
+                }
+            }
+
+            &-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 20px;
+                margin: 0;
+            }
+        }
+    }
+}

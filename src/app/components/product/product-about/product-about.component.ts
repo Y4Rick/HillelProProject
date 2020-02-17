@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { GlobalService } from '../../../services/global/global.service';
 
 @Component({
@@ -7,12 +7,13 @@ import { GlobalService } from '../../../services/global/global.service';
   styleUrls: ['./product-about.component.scss']
 })
 export class ProductAboutComponent implements OnInit {
-
   get product() {
     return this.globalSevice.product;
   }
-  constructor(private globalSevice: GlobalService) { }
 
+  constructor(private globalSevice: GlobalService) {
+  }
+  
   ngOnInit(): void {
   }
 

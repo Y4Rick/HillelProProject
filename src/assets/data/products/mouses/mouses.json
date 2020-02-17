@@ -11,6 +11,33 @@
                         "code": 42317,
                         "price": 599,
                         "rating": 3.1,
+                        "reviews": [],
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/a4Tech/a4tech-v5m-bloody-black.jpg"
                     },
                     { 
@@ -18,6 +45,35 @@
                         "code": 44218,
                         "price": 542,
                         "rating": 4.7,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/a4Tech/a4tech-bloody-v9m-black.jpg"
                     },
                     { 
@@ -25,6 +81,35 @@
                         "code": 54518,
                         "price": 499,
                         "rating": 3.8,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Беспроводное",
+                        "sensitivity": "4000 dpi",
+                        "buttons": "14 кнопок",
                         "image": "/assets/data/images/mouses/a4Tech/a4tech-q81-circuit-bloody-usb-black.jpg"
                     },
                     { 
@@ -32,6 +117,35 @@
                         "code": 54519,
                         "price": 599,
                         "rating": 2.0,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/a4Tech/a4tech-xl-747h-usb-brown.jpg"
                     },
                     { 
@@ -39,6 +153,35 @@
                         "code": 64539,
                         "price": 750,
                         "rating": 3.4,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/a4Tech/a4tech-p85-sport.jpg"
                     }
                 ]
@@ -51,6 +194,35 @@
                         "code": 56802,
                         "price": 3700,
                         "rating": 4.7,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Беспроводное",
+                        "sensitivity": "9000 dpi",
+                        "buttons": "8 кнопок",
                         "image": "/assets/data/images/mouses/logitech/logitech-g-pro-gaming-wireless-black.jpg"
                     },
                     { 
@@ -58,6 +230,35 @@
                         "code": 56717,
                         "price": 1599,
                         "rating": 4.9,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/logitech/logitech-g305-lightspeed-wireless-black.jpg"
                     },
                     { 
@@ -65,6 +266,35 @@
                         "code": 56745,
                         "price": 2499,
                         "rating": 3.0,
+                        "reviews": [],
+                        
+                        "description": 
+                        {
+                            "main": 
+                                {
+                                    "type": "Оптическая",
+                                    "usage": "Для гейминга",
+                                    "corpus": "Для правой руки",
+                                    "connection": "Проводное",
+                                    "interface": "USB",
+                                    "sensivity": "6400 dpi",
+                                    "buttons": "5 кнопок",
+                                    "tier": "1.8 м"
+                                },
+                            "additional": 
+                                {
+                                    "polling": "1000 Гц",
+                                    "acceleration": "30 G",
+                                    "dimensions": "127 x 73 x 43 мм",
+                                    "wight": "96 г",
+                                    "color": "Черный"
+                                }
+                        },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/logitech/logitech-g502-hero-black.jpg"
                     },
                     { 
@@ -72,6 +302,35 @@
                         "code": 56845,
                         "price": 1999,
                         "rating": 4.1,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Беспроводное",
+                        "sensitivity": "10000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/logitech/logitech-g403-prodigy-black.jpg"
                     },
                     { 
@@ -79,6 +338,35 @@
                         "code": 59945,
                         "price": 379,
                         "rating": 3.9,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/logitech/logitech-wireless-mouse-m171-black.jpg"
                     }
                 ]
@@ -91,6 +379,35 @@
                         "code": 80217,
                         "price": 899,
                         "rating": 5.0,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/razer/razer-deathadder-essential-black.png"
                     },
                     { 
@@ -98,6 +415,35 @@
                         "code": 80807,
                         "price": 1400,
                         "rating": 4.0,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Беспроводное",
+                        "sensitivity": "12000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/razer/razer-death-adder-elite.jpg"
                     },
                     { 
@@ -105,6 +451,35 @@
                         "code": 89007,
                         "price": 2699,
                         "rating": 4.7,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/razer/razer-naga-trinity-expert-mmo-black.jpg"
                     },
                     { 
@@ -112,6 +487,35 @@
                         "code": 80007,
                         "price": 2499,
                         "rating": 3.8,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "9000 dpi",
+                        "buttons": "8 кнопок",
                         "image": "/assets/data/images/mouses/razer/razer-mamba-elite-rz01-black.jpg"
                     },
                     { 
@@ -119,6 +523,35 @@
                         "code": 80070,
                         "price": 1599,
                         "rating": 4.9,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Беспроводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/razer/rezer-atheris-rz01-black.jpg"
                     }
                 ]
@@ -131,6 +564,35 @@
                         "code": 86070,
                         "price": 999,
                         "rating": 4.0,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/steel-series/steelseries-rival-110-black.jpg"
                     },
                     { 
@@ -138,6 +600,35 @@
                         "code": 86340,
                         "price": 2500,
                         "rating": 4.5,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "6000 dpi",
+                        "buttons": "12 кнопок",
                         "image": "/assets/data/images/mouses/steel-series/stellseries-rival-650-rgb-black.jpg"
                     },
                     { 
@@ -145,6 +636,35 @@
                         "code": 12340,
                         "price": 799,
                         "rating": 4.9,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "8500 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/steel-series/rapoo-rival-105-black.jpg"
                     },
                     { 
@@ -152,6 +672,35 @@
                         "code": 55340,
                         "price": 1999,
                         "rating": 3.8,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Проводное",
+                        "sensitivity": "9000 dpi",
+                        "buttons": "6 кнопок",
                         "image": "/assets/data/images/mouses/steel-series/steelseries-rival-500-black.jpg"
                     },
                     { 
@@ -159,6 +708,35 @@
                         "code": 55388,
                         "price": 1799,
                         "rating": 4.8,
+                        "reviews": [],
+                        
+                        "description": 
+                            {
+                                "main": 
+                                    {
+                                        "type": "Оптическая",
+                                        "usage": "Для гейминга",
+                                        "corpus": "Для правой руки",
+                                        "connection": "Проводное",
+                                        "interface": "USB",
+                                        "sensivity": "6400 dpi",
+                                        "buttons": "5 кнопок",
+                                        "tier": "1.8 м"
+                                    },
+                                "additional": 
+                                    {
+                                        "polling": "1000 Гц",
+                                        "acceleration": "30 G",
+                                        "dimensions": "127 x 73 x 43 мм",
+                                        "wight": "96 г",
+                                        "color": "Черный"
+                                    }
+                            },
+
+                        "usage": "Для гейминга",
+                        "connection": "Беспроводное",
+                        "sensitivity": "12000 dpi",
+                        "buttons": "5 кнопок",
                         "image": "/assets/data/images/mouses/steel-series/stellseries-rival-310-csgo-howl-edition-blackred.jpg"
                     }
                 ]

@@ -1,0 +1,39 @@
+@import '../../../shared/theme.scss';
+
+:host {
+    width: 100%;
+}
+
+.product-specifications {
+    display: grid;
+    height: 100%;
+
+    &__container {
+        padding: 25px;
+        box-shadow: 0 1px 5px mat-color($primary, 900);
+    }
+
+    &-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 5px;
+
+        &:not(:first-child) {
+            margin-top: 5px;
+        }
+    }
+
+    &-content {
+        &-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+            border-bottom: 1px solid rgba(mat-color($primary, 900), 0.25);
+        }
+
+        &-info {
+            color: darken(mat-color($warn), 5%);
+        }
+    }
+}

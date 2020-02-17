@@ -1,0 +1,85 @@
+@import '../../../shared/theme.scss';
+
+:host {
+    width: 100%;
+}
+
+.product-about {
+    display: grid;
+    height: 100%;
+
+    &__container {
+        padding: 25px;
+        box-shadow: 0 1px 5px mat-color($primary, 900);
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            padding: 0;
+            margin: 0;
+            font-weight: 100;
+            font-size: 14px;
+        }
+
+        &-code {
+            font-size: 14px;
+            font-weight: 400;
+            color: mat-color($warn, 600);
+        }
+
+        &-rating {
+            padding: 4px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+    }
+
+    &__content {
+        &-wrap {
+            &-img {
+                margin: 5px 0px;
+                padding: 5px 0px;
+                text-align: center;
+                border-top: 1px solid rgba(mat-color($primary, 900), 0.25);
+                border-bottom: 1px solid rgba(mat-color($primary, 900), 0.25);
+            }
+        }
+
+        &-short {
+            padding-top: 5px;
+
+            &-title {
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 2px;
+                }
+
+                &-span {
+                    color: mat-color($warn, 500);
+                }
+            }
+        }
+    }
+}
+
+.rating {
+    &-bad {
+        color: mat-color($primary, 50);
+        background-color: mat-color($warn, 700);
+    }
+
+    &-good {
+        color: mat-color($primary, 50);
+        background-color: mat-color($primary, 600);
+    }
+}

@@ -62,4 +62,9 @@ export class ProductService {
   getProduct(): Observable<any> {
     return of({ success: true , response: this.data});
   }
+
+  addReview(product, value): Observable<any> {
+    product.reviews.push(value);    
+    return of(product);
+  }
 }
