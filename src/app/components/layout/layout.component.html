@@ -46,9 +46,6 @@
       <main class="layout__main">
         <router-outlet></router-outlet>
       </main>
-      <div *ngIf="load" class="layout__spinner">
-        <mat-spinner></mat-spinner>
-      </div>
       <footer class="layout__footer">
         <div class="layout__footer-content">
           <div class="layout__footer-company-info">
@@ -80,4 +77,8 @@
       </footer>
     </mat-sidenav-content>
   </mat-sidenav-container>
+</div>
+
+<div *ngIf="load" class="layout__spinner">
+  <mat-spinner></mat-spinner>
 </div>
