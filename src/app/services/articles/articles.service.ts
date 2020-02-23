@@ -5,10 +5,10 @@ import { HttpClient } from "@angular/common/http";
 @Injectable({
   providedIn: "root"
 })
-export class KeyboardsService {
+export class ArticlesService {
   constructor(private http: HttpClient) {}
 
-  getKeyboards(): Observable<any> {
-    return this.http.get(`assets/data/products/keyboards/keyboards.json`);
+  getArticles(): Observable<any> {
+    return this.http.get(`assets/data/articles/articles.json`);
   }
 }

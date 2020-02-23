@@ -1,13 +1,13 @@
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
-import { ProductService } from '../product/product.service';
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
+import { HttpClient } from "@angular/common/http";
+import { ProductService } from "../product/product.service";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class GlobalService {
-
+  _load: boolean;
   _product: any;
 
   set product(value) {
@@ -16,8 +16,15 @@ export class GlobalService {
 
   get product() {
     return this._product;
-  } 
+  }
 
-  constructor() { }
-  
+  set load(value) {
+    this._load = value;
+  }
+
+  get load() {
+    return this._load;
+  }
+
+  constructor() {}
 }
