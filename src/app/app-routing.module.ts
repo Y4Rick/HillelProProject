@@ -1,33 +1,38 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { LayoutComponent } from './components/layout/layout.component';
-
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { LayoutComponent } from "./components/layout/layout.component";
 
 const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: '/telemart.it.hillel',
+    path: "",
+    pathMatch: "full",
+    redirectTo: "/telemart.it.hillel"
   },
   {
-    path: 'telemart.it.hillel',
+    path: "telemart.it.hillel",
     children: [
       {
-        path: '',
+        path: "",
         component: LayoutComponent,
         children: [
           {
-            path: 'product/:product_id',
-            loadChildren: './components/product/product.module#ProductModule',
+            path: "",
+            pathMatch: "full",
+            loadChildren:
+              "./components/main-page/main-page.module#MainPageModule"
           },
-        ],
+          {
+            path: "product/:product_id",
+            loadChildren: "./components/product/product.module#ProductModule"
+          }
+        ]
       }
-    ],
-  },
+    ]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

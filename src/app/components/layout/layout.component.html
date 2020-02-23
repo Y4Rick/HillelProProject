@@ -1,50 +1,84 @@
 <div class="layout__container">
-    <header class="layout__header">
-        <div class="layout__head">
-            <a [routerLink]="['/', 'telemart.it.hillel']">
-                <mat-icon 
-                    class="layout__logo" 
-                    color="primary"
-                >
-                    desktop_windows
-                </mat-icon>
-            </a>
-            <h1 class="layout__title">
-                Telemart Hillel Pro Project
-            </h1>
-        </div>
-        <mat-toolbar class="layout__toolbar">
-            <button
-                class="layout__menu-button"
-                mat-button
-                [matMenuTriggerFor]="menu"
-            >
-                <mat-icon 
-                    class="layout__menu-button-icon"
-                >
-                    menu
-                </mat-icon>
-                <span>Каталог товаров</span>
-            </button>
-            <app-search class="layout__search"></app-search>
-            <div class="cashbox"></div>
-        </mat-toolbar>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item>
-                <mat-icon color="primary">mouse</mat-icon>
-                <span>Мышки</span>
-            </button>
-            <button mat-menu-item>
-                <mat-icon color="primary">keyboard</mat-icon>
-                <span>Клавиатуры</span>
-            </button>
-            <button mat-menu-item>
-                <mat-icon color="primary">headset_mic</mat-icon>
-                <span>Наушники</span>
-            </button>
-        </mat-menu>
-    </header>
-    <main>
+  <header class="layout__header">
+    <div class="layout__head">
+      <a mat-icon-button [routerLink]="['/', 'telemart.it.hillel']">
+        <mat-icon class="layout__logo" color="primary">
+          desktop_windows
+        </mat-icon>
+      </a>
+      <h1 class="layout__title">
+        Telemart Hillel Pro Project
+      </h1>
+    </div>
+    <mat-toolbar class="layout__toolbar">
+      <button class="layout__menu-button" mat-button (click)="sidenav.toggle()">
+        <mat-icon class="layout__menu-button-icon">
+          menu
+        </mat-icon>
+        <span>Каталог товаров</span>
+      </button>
+      <app-search class="layout__search"></app-search>
+      <div class="cashbox"></div>
+    </mat-toolbar>
+  </header>
+  <mat-sidenav-container class="layout__sidenav-container">
+    <mat-sidenav
+      class="layout__sidenav"
+      #sidenav
+      mode="over"
+      [(opened)]="opened"
+    >
+      <mat-nav-list class="layout__sidenav-list" role="list">
+        <a mat-list-item [routerLink]="[]">
+          <mat-icon color="primary">mouse</mat-icon> <span>Мышки</span>
+        </a>
+        <a mat-list-item [routerLink]="[]">
+          <mat-icon color="primary">keyboard</mat-icon> <span>Клавиатуры</span>
+        </a>
+        <a mat-list-item [routerLink]="[]">
+          <mat-icon color="primary">headset_mic</mat-icon>
+          <span>Наушники</span></a
+        >
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="layout__sidenav-content">
+      <main class="layout__main">
         <router-outlet></router-outlet>
-    </main>
+      </main>
+      <footer class="layout__footer">
+        <div class="layout__footer-content">
+          <div class="layout__footer-company-info">
+            <h3>Компания</h3>
+            <mat-nav-list class="layout__footer-list" role="list">
+              <a mat-list-item href="#"> О нас </a>
+              <a mat-list-item href="#"> Контакты </a>
+              <a mat-list-item href="#"> Партнерство</a>
+              <a mat-list-item href="#"> Вакансии</a>
+              <a mat-list-item href="#"> Акции</a>
+              <a mat-list-item href="#"> Блог</a>
+            </mat-nav-list>
+          </div>
+          <div class="layout__footer-company-docs">
+            <h3>Информация</h3>
+            <mat-nav-list class="layout__footer-list" role="list">
+              <a mat-list-item href="#"> Доставка и оплата </a>
+              <a mat-list-item href="#"> Гарантии </a>
+              <a mat-list-item href="#"> Политика конфиденциальности</a>
+              <a mat-list-item href="#"> Публичная оферта</a>
+            </mat-nav-list>
+          </div>
+          <div class="layout__footer-company-routine">
+            <h3>График</h3>
+            <p>Пн-Пт: 09:00 - 21:00</p>
+            <p>Сб-Вс: 10:00 - 18:00</p>
+          </div>
+        </div>
+      </footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<div *ngIf="load" class="layout__spinner">
+  <mat-spinner></mat-spinner>
 </div>

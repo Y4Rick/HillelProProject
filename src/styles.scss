@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -19,38 +18,50 @@ $telemart-hillel-pro-accent: mat-palette($mat-pink, A200, A100, A400);
 $telemart-hillel-pro-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$telemart-hillel-pro-theme: mat-light-theme($telemart-hillel-pro-primary, $telemart-hillel-pro-accent, $telemart-hillel-pro-warn);
+$telemart-hillel-pro-theme: mat-light-theme(
+  $telemart-hillel-pro-primary,
+  $telemart-hillel-pro-accent,
+  $telemart-hillel-pro-warn
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($telemart-hillel-pro-theme);
 
-
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 @include mat-core();
-@import './app/shared/theme.scss';
+@import "./app/shared/theme.scss";
 
 * {
   box-sizing: border-box;
 }
 
-html, body { height: 100%; }
-body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 
-    ::-webkit-scrollbar {
-        -webkit-appearance: none;
-        width: 3px;
-        height: 0;
-      }
-    
-    ::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 3px;
+    height: 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: mat-color($primary, 600);
-    }
+  }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a:hover {
+  color: initial;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
