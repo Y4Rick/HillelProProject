@@ -54,7 +54,7 @@ export class MainPageComponent implements OnInit {
               return a.rating > b.rating ? -1 : 1;
             })
             .splice(1, 7);
-          console.log(this.best_products);
+          // console.log(this.best_products);
           this.globalSevice.load = false;
         }, 1500);
       }

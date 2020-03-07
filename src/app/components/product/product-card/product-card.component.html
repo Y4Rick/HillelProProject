@@ -1,0 +1,20 @@
+<mat-card class="card">
+  <a
+    class="card__link"
+    [routerLink]="['/', 'telemart.it.hillel', 'product', product.code, 'about']"
+  >
+    <mat-card-title class="card__title">
+      {{ product.name }}
+    </mat-card-title>
+    <img mat-card-image class="card__img" [src]="product.image" />
+    <mat-card-content class="card__content">
+      <span class="card__content-price">{{ product.price }} грн.</span>
+      <span
+        class="card__content-rating"
+        [ngClass]="product.rating > 4 ? 'rating-good' : 'rating-bad'"
+      >
+        {{ product.rating.toFixed(1) }}
+      </span>
+    </mat-card-content>
+  </a>
+</mat-card>

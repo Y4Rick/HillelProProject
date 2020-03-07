@@ -14,6 +14,7 @@ import { MainPageModule } from "../main-page/main-page.module";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
+import { CategoriesModule } from "../categories/categories.module";
 @NgModule({
   declarations: [LayoutComponent],
   imports: [
@@ -26,6 +27,7 @@ import { MatListModule } from "@angular/material/list";
     MatProgressSpinnerModule,
     SearchModule,
     ProductModule,
+    CategoriesModule,
     MainPageModule,
     MatSidenavModule,
     MatListModule
