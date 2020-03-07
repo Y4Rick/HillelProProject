@@ -5,7 +5,7 @@ import { MainPageRoutingModule } from "./main-page-routing.module";
 import { MainPageComponent } from "./main-page.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FormsModule } from "@angular/forms";
-import { MatCardModule } from "@angular/material/card";
+import { ProductCardModule } from "../product/product-card/product-card.module";
 
 @NgModule({
   declarations: [MainPageComponent],
@@ -14,7 +14,7 @@ import { MatCardModule } from "@angular/material/card";
     MainPageRoutingModule,
     NgbModule,
     FormsModule,
-    MatCardModule
+    ProductCardModule
   ]
 })
 export class MainPageModule {}

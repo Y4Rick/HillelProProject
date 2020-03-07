@@ -1,0 +1,87 @@
+<div class="categories">
+  <div class="categories__aside">
+    <div class="categories__filteres">
+      <span class="categories__filteres-title">Фильтры</span>
+      <div class="categories__filteres-price">
+        <span class="categories__filteres-price-title">Цена</span>
+        <form [formGroup]="price_form" class="price__form">
+          <mat-form-field class="price__form-field">
+            <input
+              type="number"
+              formControlName="from"
+              matInput
+              placeholder="От"
+            />
+          </mat-form-field>
+          <mat-form-field class="price__form-field">
+            <input
+              type="number"
+              formControlName="to"
+              matInput
+              placeholder="До"
+            />
+          </mat-form-field>
+          <button type="submit" mat-icon-button (click)="submitFilterPrice()">
+            <mat-icon>check</mat-icon>
+          </button>
+        </form>
+      </div>
+      <div class="categories__filteres-brands">
+        <span class="categories__filteres-brands-title">Бренды</span>
+        <form
+          *ngIf="brands.length > 0"
+          [formGroup]="brands_form"
+          class="brands__form"
+        >
+          <mat-checkbox
+            *ngFor="let brand of brands; let i = index"
+            [formControlName]="i"
+          >
+            {{ brand }}
+          </mat-checkbox>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="categories__main">
+    <div class="categories__sorts">
+      <span class="categories__sorts-title">Сортировать</span>
+      <div class="sorts">
+        <div class="sorts__item">
+          <button
+            class="sorts__item-button"
+            mat-button
+            (click)="sortProducts('price')"
+          >
+            <mat-icon class="sorts__item-icon">
+              {{ price_direction ? "arrow_downward" : "arrow_upward" }}
+            </mat-icon>
+            <span class="sorts__item-text">По цене</span>
+          </button>
+        </div>
+
+        <div class="sorts__item">
+          <button
+            class="sorts__item-button"
+            mat-button
+            (click)="sortProducts('rating')"
+          >
+            <mat-icon class="sorts__item-icon">
+              {{ rating_direction ? "arrow_downward" : "arrow_upward" }}
+            </mat-icon>
+            <span class="sorts__item-text">По рейтингу</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="no-product" *ngIf="filtered_products.length === 0">
+      Нет товаров по таким критериям
+    </div>
+    <div class="categories__cards">
+      <app-product-card
+        *ngFor="let product of filtered_products"
+        [product]="product"
+      ></app-product-card>
+    </div>
+  </div>
+</div>

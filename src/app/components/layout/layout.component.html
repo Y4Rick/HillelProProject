@@ -29,13 +29,28 @@
       [(opened)]="opened"
     >
       <mat-nav-list class="layout__sidenav-list" role="list">
-        <a mat-list-item [routerLink]="[]">
+        <a
+          mat-list-item
+          [routerLink]="['categories']"
+          [queryParams]="{ category: 'mouses' }"
+          (click)="opened = false"
+        >
           <mat-icon color="primary">mouse</mat-icon> <span>Мышки</span>
         </a>
-        <a mat-list-item [routerLink]="[]">
+        <a
+          mat-list-item
+          [routerLink]="['categories']"
+          [queryParams]="{ category: 'keyboards' }"
+          (click)="opened = false"
+        >
           <mat-icon color="primary">keyboard</mat-icon> <span>Клавиатуры</span>
         </a>
-        <a mat-list-item [routerLink]="[]">
+        <a
+          mat-list-item
+          [routerLink]="['categories']"
+          [queryParams]="{ category: 'headphones' }"
+          (click)="opened = false"
+        >
           <mat-icon color="primary">headset_mic</mat-icon>
           <span>Наушники</span></a
         >

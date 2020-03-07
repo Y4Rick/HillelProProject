@@ -18,16 +18,10 @@
   <div class="main__best-product" *ngIf="best_products.length > 0">
     <h2 class="main__best-product-title">Лучшие товары</h2>
     <div class="main__best-product-cards">
-      <mat-card class="card" *ngFor="let item of best_products">
-        <mat-card-title class="card__title">
-          {{ item.name }}
-        </mat-card-title>
-        <img mat-card-image class="card__img" [src]="item.image" />
-        <mat-card-content class="card__content">
-          <span class="card__content-price">{{ item.price }} грн.</span>
-          <span class="card__content-rating">{{ item.rating }}</span>
-        </mat-card-content>
-      </mat-card>
+      <app-product-card
+        *ngFor="let product of best_products"
+        [product]="product"
+      ></app-product-card>
     </div>
   </div>
 </div>

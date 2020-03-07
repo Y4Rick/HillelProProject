@@ -24,6 +24,11 @@ const routes: Routes = [
           {
             path: "product/:product_id",
             loadChildren: "./components/product/product.module#ProductModule"
+          },
+          {
+            path: "categories",
+            loadChildren:
+              "./components/categories/categories.module#CategoriesModule"
           }
         ]
       }
