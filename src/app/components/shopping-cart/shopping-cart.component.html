@@ -1,0 +1,19 @@
+<div class="shopping-cart">
+  <div class="shopping-cart__icon-container">
+    <mat-icon class="shopping-cart__icon" color="primary">
+      shopping_basket
+    </mat-icon>
+    <span
+      *ngIf="shopping_cart && shopping_cart.length > 0"
+      class="shopping-cart__icon-cout"
+    >
+      {{ shopping_cart.length }}
+    </span>
+  </div>
+  <span class="shopping-cart__text">
+    Корзина
+  </span>
+  <span class="shopping-cart__amount">
+    6785 грн.
+  </span>
+</div>

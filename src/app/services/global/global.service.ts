@@ -9,6 +9,7 @@ import { ProductService } from "../product/product.service";
 export class GlobalService {
   _load: boolean;
   _product: any;
+  _shopping_cart = [];
 
   set product(value) {
     this._product = value;
@@ -16,6 +17,10 @@ export class GlobalService {
 
   get product() {
     return this._product;
+  }
+
+  get shopping_cart() {
+    return this._shopping_cart;
   }
 
   set load(value) {

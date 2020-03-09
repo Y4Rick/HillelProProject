@@ -17,4 +17,16 @@
       </span>
     </mat-card-content>
   </a>
+  <div class="card__buttons">
+    <button mat-raised-button class="card__button">
+      <span>Купить</span>
+    </button>
+    <button
+      mat-icon-button
+      class="card__button"
+      (click)="addToShoppingCart(product)"
+    >
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+  </div>
 </mat-card>
