@@ -19,13 +19,22 @@
     <div class="product-container__content-offer">
       <div class="product-container__content-offer-wrap">
         <div class="product-container__content-offer-item">
-          <span class="product-container__content-offer-item-price"
-            >{{ product ? product.price : "" }} грн.</span
-          >
-          <button mat-button class="product-container__content-offer-item-bay">
-            <mat-icon>shopping_cart</mat-icon>
-            <span>Купить</span>
-          </button>
+          <span class="product-container__content-offer-item-price">
+            {{ product ? product.price : "" }} грн.
+          </span>
+
+          <div class="product-container__content-offer-item-bay">
+            <button mat-raised-button class="bay" color="primary">
+              <span>Купить</span>
+            </button>
+            <button
+              mat-icon-button
+              [color]="product.card_css"
+              (click)="addToShoppingCart(product)"
+            >
+              <mat-icon>add_shopping_cart</mat-icon>
+            </button>
+          </div>
         </div>
       </div>
       <div class="product-container__content-offer-wrap">

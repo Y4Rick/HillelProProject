@@ -30,11 +30,16 @@
 
   &__text {
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
   }
 
   &__amount {
-    margin-left: auto;
-    font-style: italic;
     color: mat-color($warn);
+  }
+
+  &__order {
+    margin-left: auto;
   }
 }

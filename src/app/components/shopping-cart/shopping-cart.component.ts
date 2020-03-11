@@ -11,6 +11,10 @@ export class ShoppingCartComponent implements OnInit {
     return this.globalService.shopping_cart;
   }
 
+  get all_price() {
+    return this.globalService.all_price;
+  }
+
   constructor(public globalService: GlobalService) {}
 
   ngOnInit(): void {}

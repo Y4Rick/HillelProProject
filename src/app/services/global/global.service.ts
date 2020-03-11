@@ -10,6 +10,7 @@ export class GlobalService {
   _load: boolean;
   _product: any;
   _shopping_cart = [];
+  _all_price: number;
 
   set product(value) {
     this._product = value;
@@ -17,6 +18,14 @@ export class GlobalService {
 
   get product() {
     return this._product;
+  }
+
+  set all_price(value) {
+    this._all_price = value;
+  }
+
+  get all_price() {
+    return this._all_price;
   }
 
   get shopping_cart() {

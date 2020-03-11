@@ -12,8 +12,13 @@
   </div>
   <span class="shopping-cart__text">
     Корзина
+    <span class="shopping-cart__amount">
+      <ng-template [ngIf]="all_price"> {{ all_price }} грн.</ng-template>
+    </span>
   </span>
-  <span class="shopping-cart__amount">
-    6785 грн.
-  </span>
+  <div *ngIf="all_price" class="shopping-cart__order">
+    <button mat-raised-button>
+      Оформить заказ
+    </button>
+  </div>
 </div>
