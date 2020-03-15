@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "response": [
+    {
+      "image": "/assets/data/images/articles/article_01.jpg"
+    },
+    {
+      "image": "/assets/data/images/articles/article_02.jpg"
+    },
+    {
+      "image": "/assets/data/images/articles/article_03.jpg"
+    }
+  ]
+}
