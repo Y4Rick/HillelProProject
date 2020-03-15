@@ -17,4 +17,22 @@
       </span>
     </mat-card-content>
   </a>
+  <div class="card__buttons">
+    <a
+      class="card__button"
+      mat-raised-button
+      [routerLink]="['/', 'telemart.it.hillel', 'order']"
+      (click)="addToShoppingCart(product)"
+    >
+      <span>Купить</span>
+    </a>
+    <button
+      mat-icon-button
+      class="card__button"
+      [color]="product.card_css"
+      (click)="addToShoppingCart(product)"
+    >
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+  </div>
 </mat-card>

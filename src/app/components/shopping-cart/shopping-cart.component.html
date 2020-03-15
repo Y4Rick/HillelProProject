@@ -1,0 +1,24 @@
+<div class="shopping-cart">
+  <div class="shopping-cart__icon-container">
+    <mat-icon class="shopping-cart__icon" color="primary">
+      shopping_basket
+    </mat-icon>
+    <span
+      *ngIf="shopping_cart && shopping_cart.length > 0"
+      class="shopping-cart__icon-cout"
+    >
+      {{ shopping_cart.length }}
+    </span>
+  </div>
+  <span class="shopping-cart__text">
+    Корзина
+    <span class="shopping-cart__amount">
+      <ng-template [ngIf]="all_price"> {{ all_price }} грн.</ng-template>
+    </span>
+  </span>
+  <div *ngIf="all_price" class="shopping-cart__order">
+    <a mat-raised-button [routerLink]="['/', 'telemart.it.hillel', 'order']">
+      Оформить заказ
+    </a>
+  </div>
+</div>

@@ -15,6 +15,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { CategoriesModule } from "../categories/categories.module";
+import { ShoppingCartModule } from "../shopping-cart/shopping-cart.module";
 @NgModule({
   declarations: [LayoutComponent],
   imports: [
@@ -30,7 +31,8 @@ import { CategoriesModule } from "../categories/categories.module";
     CategoriesModule,
     MainPageModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    ShoppingCartModule
   ],
   providers: [Overlay]
 })

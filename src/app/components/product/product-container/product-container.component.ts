@@ -9,6 +9,7 @@ import { DeliveryService } from "../../../services/delivery/delivery.service";
 import { GlobalService } from "src/app/services/global/global.service";
 import { ActivatedRoute } from "@angular/router";
 import { ProductService } from "src/app/services/product/product.service";
+import { ShoppingService } from "src/app/services/shopping/shopping.service";
 
 @Component({
   selector: "app-product-container",
@@ -33,9 +34,10 @@ export class ProductContainerComponent implements OnInit {
 
   constructor(
     private deliveryService: DeliveryService,
-    private globalSevice: GlobalService,
+    public globalSevice: GlobalService,
     private productService: ProductService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private shoppingService: ShoppingService
   ) {
     this.globalSevice.load = true;
 
@@ -74,6 +76,11 @@ export class ProductContainerComponent implements OnInit {
         }, 1500);
       }
     });
+  }
+
+  addToShoppingCart(product) {
+    this.shoppingService.addToShoppingCart(product);
+    this.product.card_css = "accent";
   }
 
   getDelivery() {

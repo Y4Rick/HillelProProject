@@ -1,0 +1,49 @@
+@import "../../shared/theme.scss";
+
+:host {
+  width: 100%;
+}
+
+.shopping-cart {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+
+  &__icon {
+    font-size: 32px;
+
+    &-container {
+      position: relative;
+    }
+
+    &-cout {
+      position: absolute;
+      top: -4px;
+      right: -15px;
+      padding: 1px;
+      width: 18px;
+      height: 18px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 18px;
+      border-radius: 50%;
+      color: mat-color($primary, 50);
+      background-color: mat-color($accent);
+    }
+  }
+
+  &__text {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+  }
+
+  &__amount {
+    color: mat-color($warn);
+  }
+
+  &__order {
+    margin-left: auto;
+  }
+}

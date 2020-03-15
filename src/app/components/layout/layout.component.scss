@@ -65,7 +65,7 @@
   &__toolbar {
     padding: 0;
     display: grid;
-    grid-template-columns: 245px 1fr 250px;
+    grid-template-columns: 245px 1fr 300px;
     align-items: center;
   }
 
@@ -113,10 +113,4 @@
     background-color: #fff;
     z-index: 1000;
   }
-}
-
-.cashbox {
-  width: 250px;
-  height: 10px;
-  background-color: #fff;
 }
