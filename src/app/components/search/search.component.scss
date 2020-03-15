@@ -1,53 +1,57 @@
-@import '../../shared/theme.scss';
+@import "../../shared/theme.scss";
+
+:host {
+  width: 100%;
+}
 
 .search {
-    font-size: 14px;
+  font-size: 14px;
 
-    &__field {
-        width: 100%;
+  &__field {
+    width: 100%;
 
-        &::ng-deep {
-            .mat-form-field-wrapper {
-                padding: 0;
-                margin: 4px 0;
-            }
-        }
-        
-        &-label {
-            color: mat-color($primary);
-        }
+    &::ng-deep {
+      .mat-form-field-wrapper {
+        padding: 0;
+        margin: 4px 0;
+      }
     }
 
-    &__form {
-        position: relative;
+    &-label {
+      color: mat-color($primary);
     }
+  }
 
-    &__no-results {
-        position: absolute;
-        padding: 5px 10px;
+  &__form {
+    position: relative;
+  }
+
+  &__no-results {
+    position: absolute;
+    padding: 5px 10px;
+    font-style: italic;
+    left: 0;
+    bottom: -30px;
+  }
+
+  &__optgroup {
+    &::ng-deep {
+      .mat-optgroup-label {
         font-style: italic;
-        left: 0;
-        bottom: -30px;
+      }
     }
 
-    &__optgroup {
-        &::ng-deep {
-            .mat-optgroup-label {
-                font-style: italic;
-            }
-        }
-
-        &-option.mat-option:not(.mat-option-multiple) {
-            padding: 0;
-        }
-
-        &-link {
-            display: block;
-            padding: 0 5px 0 30px;
-            color: mat-color($primary);
-            text-decoration: none;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+    &-option.mat-option:not(.mat-option-multiple) {
+      padding: 0;
     }
+
+    &-link {
+      display: block;
+      padding: 0 5px 0 30px;
+      color: mat-color($primary);
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }

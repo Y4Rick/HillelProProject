@@ -18,9 +18,14 @@
     </mat-card-content>
   </a>
   <div class="card__buttons">
-    <button mat-raised-button class="card__button">
+    <a
+      class="card__button"
+      mat-raised-button
+      [routerLink]="['/', 'telemart.it.hillel', 'order']"
+      (click)="addToShoppingCart(product)"
+    >
       <span>Купить</span>
-    </button>
+    </a>
     <button
       mat-icon-button
       class="card__button"

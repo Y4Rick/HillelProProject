@@ -29,6 +29,10 @@ const routes: Routes = [
             path: "categories",
             loadChildren:
               "./components/categories/categories.module#CategoriesModule"
+          },
+          {
+            path: "order",
+            loadChildren: "./components/copy/categories.module#CategoriesModule"
           }
         ]
       }

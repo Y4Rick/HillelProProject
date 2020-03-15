@@ -24,9 +24,15 @@
           </span>
 
           <div class="product-container__content-offer-item-bay">
-            <button mat-raised-button class="bay" color="primary">
+            <a
+              class="bay"
+              color="primary"
+              mat-raised-button
+              [routerLink]="['/', 'telemart.it.hillel', 'order']"
+              (click)="addToShoppingCart(product)"
+            >
               <span>Купить</span>
-            </button>
+            </a>
             <button
               mat-icon-button
               [color]="product.card_css"

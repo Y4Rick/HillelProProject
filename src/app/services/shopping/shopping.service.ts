@@ -17,6 +17,8 @@ export class ShoppingService {
       this.shopping_cart.push(value);
 
       this.calculatePrice();
+
+      console.log(this.shopping_cart);
     }
   }
 

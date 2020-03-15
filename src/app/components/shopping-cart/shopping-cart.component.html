@@ -17,8 +17,8 @@
     </span>
   </span>
   <div *ngIf="all_price" class="shopping-cart__order">
-    <button mat-raised-button>
+    <a mat-raised-button [routerLink]="['/', 'telemart.it.hillel', 'order']">
       Оформить заказ
-    </button>
+    </a>
   </div>
 </div>
