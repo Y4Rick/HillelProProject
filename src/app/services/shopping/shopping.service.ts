@@ -14,41 +14,38 @@ export class ShoppingService {
   addToShoppingCart(value) {
     if (!this.shopping_cart.find(item => item.code === value.code)) {
       value.quantity = 1;
+      value.quantity_price = value.price;
       this.shopping_cart.push(value);
 
       this.calculatePrice();
-
-      console.log(this.shopping_cart);
     }
   }
 
-  increaseQuantity(product) {
-    product.quantity = product.quantity + 1;
-  }
-
-  decreaseQuantity(product) {
-    if (product.quantity === 1) {
-      return;
-    }
-    product.quantity = product.quantity - 1;
+  changeQuantity(value, product) {
+    product.quantity = value;
+    product.quantity_price = product.price * product.quantity;
+    this.calculatePrice();
   }
 
   calculatePrice() {
     this.globalService.all_price = this.shopping_cart.reduce((acc, item) => {
-      acc += item.price;
+      acc += item.quantity_price;
 
       return acc;
     }, null);
   }
 
   resetShoppingCart() {
-    this.shopping_cart.slice(1, -1);
+    this.globalService.shopping_cart = [];
+    this.globalService.all_price = 0;
   }
 
   deletePruductFromShoppingCart(product_code) {
     const index = this.shopping_cart.findIndex(
       item => item.code === product_code
     );
-    this.shopping_cart.slice(index, 1);
+    this.shopping_cart.splice(index, 1);
+
+    this.calculatePrice();
   }
 }

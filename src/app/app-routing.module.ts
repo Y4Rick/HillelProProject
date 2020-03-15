@@ -22,6 +22,10 @@ const routes: Routes = [
               "./components/main-page/main-page.module#MainPageModule"
           },
           {
+            path: "order",
+            loadChildren: "./components/order/order.module#OrderModule"
+          },
+          {
             path: "product/:product_id",
             loadChildren: "./components/product/product.module#ProductModule"
           },
@@ -29,10 +33,6 @@ const routes: Routes = [
             path: "categories",
             loadChildren:
               "./components/categories/categories.module#CategoriesModule"
-          },
-          {
-            path: "order",
-            loadChildren: "./components/order/order.module#OrderModule"
           }
         ]
       }

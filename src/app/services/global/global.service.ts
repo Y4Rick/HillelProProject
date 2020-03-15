@@ -32,6 +32,10 @@ export class GlobalService {
     return this._shopping_cart;
   }
 
+  set shopping_cart(value) {
+    this._shopping_cart = value;
+  }
+
   set load(value) {
     this._load = value;
   }

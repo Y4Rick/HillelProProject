@@ -5,8 +5,9 @@ import { OrderRoutingModule } from "./order-routing.module";
 import { OrderComponent } from "./order.component";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
-import { MatInputModule } from "@angular/material/input";
 import { MatCardModule } from "@angular/material/card";
+import { ReactiveFormsModule } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
 
 @NgModule({
   declarations: [OrderComponent],
@@ -15,8 +16,9 @@ import { MatCardModule } from "@angular/material/card";
     OrderRoutingModule,
     MatButtonModule,
     MatIconModule,
-    MatInputModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule,
+    MatInputModule
   ]
 })
 export class OrderModule {}

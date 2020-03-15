@@ -1,27 +1,93 @@
-<div class="order">
-  <div class="order__header">
-    <h2 class="order__title">Оформления заказа</h2>
-    <span class="order__price"> {{ all_price }} грн. </span>
-  </div>
-  <div class="order__content">
-    <div class="order__items">
-      <div class="order__item">
-        <!-- <mat-card class="card">
-          <mat-card-title class="card__title">
-            {{ product.name }}
-          </mat-card-title>
-          <img mat-card-image class="card__img" [src]="product.image" />
-          <mat-card-content class="card__content">
-            <span class="card__content-price">{{ product.price }} грн.</span>
-            <span
-              class="card__content-rating"
-              [ngClass]="product.rating > 4 ? 'rating-good' : 'rating-bad'"
-            >
-              {{ product.rating.toFixed(1) }}
-            </span>
-          </mat-card-content>
-        </mat-card> -->
+<div class="order" *ngIf="!finish">
+  <div class="order__wrap" *ngIf="shopping_cart.length; else no_product">
+    <div class="order__header">
+      <h2 class="order__title">Оформления заказа</h2>
+      <span class="order__price"> {{ all_price }} грн. </span>
+    </div>
+    <div class="order__content">
+      <div class="order__items">
+        <div class="order__item" *ngFor="let product of shopping_cart">
+          <mat-card class="card">
+            <mat-card-title class="card__title">
+              {{ product.name }}
+            </mat-card-title>
+            <img mat-card-image class="card__img" [src]="product.image" />
+            <mat-card-content class="card__content">
+              <span class="card__content-price">{{ product.price }} грн.</span>
+              <span
+                class="card__content-rating"
+                [ngClass]="product.rating > 4 ? 'rating-good' : 'rating-bad'"
+              >
+                {{ product.rating.toFixed(1) }}
+              </span>
+            </mat-card-content>
+          </mat-card>
+          <div class="order__count">
+            <mat-form-field class="order__count-field">
+              <input
+                type="number"
+                matInput
+                [value]="product.quantity"
+                min="1"
+                (change)="valuechange($event.target.value, product)"
+              />
+            </mat-form-field>
+            <button mat-icon-button (click)="remove(product)">
+              <mat-icon>clear</mat-icon>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+    <form class="order__form" [formGroup]="form">
+      <mat-form-field class="order__form-field">
+        <mat-label>Имя</mat-label>
+        <input type="text" formControlName="first_name" matInput required />
+        <mat-error *ngIf="form.get('first_name').hasError('required')">
+          Обязательное поле
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="order__form-field">
+        <mat-label>Фамилия</mat-label>
+        <input type="text" formControlName="second_name" matInput required />
+        <mat-error *ngIf="form.get('second_name').hasError('required')">
+          Обязательное поле
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="order__form-field">
+        <mat-label>Телефон</mat-label>
+        <input type="tel" formControlName="tel" matInput required />
+        <mat-error *ngIf="form.get('tel').hasError('required')">
+          Обязательное поле
+        </mat-error>
+        <mat-error *ngIf="form.get('tel').hasError('pattern')">
+          Неправильный номер
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="order__form-field">
+        <mat-label>Адрес</mat-label>
+        <input type="text" formControlName="adress" matInput required />
+        <mat-error *ngIf="form.get('adress').hasError('required')">
+          Обязательное поле
+        </mat-error>
+      </mat-form-field>
+      <button
+        class="order__form-button"
+        mat-raised-button
+        type="submit"
+        [disabled]="form.invalid"
+        (click)="submit()"
+      >
+        Подтвердить
+      </button>
+    </form>
   </div>
+  <ng-template #no_product>
+    <h2 class="no-product">В корзине нет товаров</h2>
+  </ng-template>
+</div>
+<div class="finish" *ngIf="finish">
+  <h1 class="finish__title">
+    Спасибо за покупку!
+  </h1>
 </div>

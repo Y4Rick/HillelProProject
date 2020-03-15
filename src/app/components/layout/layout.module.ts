@@ -16,6 +16,8 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { CategoriesModule } from "../categories/categories.module";
 import { ShoppingCartModule } from "../shopping-cart/shopping-cart.module";
+import { OrderModule } from "../order/order.module";
+
 @NgModule({
   declarations: [LayoutComponent],
   imports: [
@@ -32,7 +34,8 @@ import { ShoppingCartModule } from "../shopping-cart/shopping-cart.module";
     ProductModule,
     CategoriesModule,
     MainPageModule,
-    ShoppingCartModule
+    ShoppingCartModule,
+    OrderModule
   ],
   providers: [Overlay]
 })

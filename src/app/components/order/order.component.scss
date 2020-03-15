@@ -4,6 +4,81 @@
   width: 100%;
 }
 
+.order {
+  padding: 15px;
+
+  &__wrap {
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px mat-color($primary, 900);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__price {
+    font-size: 20px;
+    line-height: 24px;
+    color: mat-color($warn);
+  }
+
+  &__items {
+    padding-top: 15px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  &__count {
+    &-field {
+      width: 50px;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px 15px;
+    border-top: 1px dashed;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    &-field {
+      ::ng-deep {
+        .mat-form-field-infix {
+          width: auto;
+        }
+      }
+    }
+
+    &-button {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+}
+
+.no-product {
+  text-align: center;
+}
+
 .card {
   width: 200px;
   display: flex;
@@ -12,6 +87,7 @@
   justify-content: space-between;
 
   &__title {
+    margin: 0;
     font-size: 14px;
   }
 
@@ -32,6 +108,11 @@
       flex-shrink: 0;
     }
   }
+
+  &__img {
+    width: 85px;
+    margin: 0 auto;
+  }
 }
 
 .rating {
@@ -43,5 +124,18 @@
   &-good {
     color: mat-color($primary, 50);
     background-color: mat-color($primary, 600);
+  }
+}
+
+.finish {
+  width: 500px;
+  margin: 15px auto 15px auto;
+  padding: 50px 25px;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px mat-color($primary, 900);
+
+  &__title {
+    margin: 0;
+    text-align: center;
   }
 }
