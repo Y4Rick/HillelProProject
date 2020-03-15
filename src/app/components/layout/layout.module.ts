@@ -26,12 +26,12 @@ import { ShoppingCartModule } from "../shopping-cart/shopping-cart.module";
     MatToolbarModule,
     MatMenuModule,
     MatProgressSpinnerModule,
+    MatSidenavModule,
+    MatListModule,
     SearchModule,
     ProductModule,
     CategoriesModule,
     MainPageModule,
-    MatSidenavModule,
-    MatListModule,
     ShoppingCartModule
   ],
   providers: [Overlay]

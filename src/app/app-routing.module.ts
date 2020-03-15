@@ -32,7 +32,7 @@ const routes: Routes = [
           },
           {
             path: "order",
-            loadChildren: "./components/copy/categories.module#CategoriesModule"
+            loadChildren: "./components/order/order.module#OrderModule"
           }
         ]
       }

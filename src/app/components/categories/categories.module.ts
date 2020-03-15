@@ -17,13 +17,13 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
     CommonModule,
     CategoriesRoutingModule,
     MatButtonModule,
-    ProductCardModule,
     MatIconModule,
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    ProductCardModule
   ]
 })
 export class CategoriesModule {}
