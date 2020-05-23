@@ -1,0 +1,21 @@
+{
+  "name": "hillelnode",
+  "version": "1.0.0",
+  "description": "HillelNode homeworks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "cross-env EXT='.txt,.doc,.mp4' node index.js red green magenta --deep=0 --path='./target'",
+    "start:devy": "cross-env EXT='.txt,.mp3' node index.js blue yellowBright --deep=0 --path='./target'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.0"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "minimist": "^1.2.0"
+  }
+}
